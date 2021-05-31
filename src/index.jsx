@@ -4,6 +4,7 @@ import './style.css';
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 import Simpleformpage from './pages/Simpleformpage';
 import Detailformpage from './pages/Detailformpage';
+import {Homepage} from './components/Homepage/Homepage';
 
 const App = () => {
   return (
@@ -17,18 +18,17 @@ const App = () => {
         <Link to="/detailni">Podrobný zápis</Link>
       </div>
       <Switch>
+        <Route exact path="/">
+          <Homepage />
+        </Route>
         <Route path="/zjednoduseny">
           <Simpleformpage />
         </Route>
-      </Switch>
-      <Switch>
         <Route path="/detailni">
           <Detailformpage />
         </Route>
-      </Switch>
-      <Switch>
         <Route path="/"></Route>
-      </Switch>
+        </Switch>
     </Router>
   );
 };
