@@ -3,6 +3,8 @@ import './style.css';
 import { useFormik } from 'formik';
 import * as yup from 'yup';
 import { Button, ButtonGroup, TextField } from '@material-ui/core';
+import { db } from '../../db';
+import firebase from 'firebase/app'
 
 const validationSchema = yup.object({
   bookName: yup.string().required('Název knížky musíš vyplnit!'),
@@ -23,7 +25,14 @@ const DetailForm = () => {
       motto: '',
       recommendation: '',
     },
-    onSubmit: (values) => console.log(JSON.stringify(values)),
+    onSubmit: (values) => db.collection('BookList').add({
+      bookName: values.bookName,
+      authorName: values.authorName,
+      pages: values.pages,
+      date: values.date
+      /* date: firebase.firestore.FieldValue.serverTimestamp() */
+    }),
+   /*  console.log(JSON.stringify(values)), */
     validationSchema: validationSchema,
   });
   /* const myPrint = (form) => {
