@@ -4,7 +4,14 @@ import { useFormik } from 'formik';
 import * as yup from 'yup';
 import { Button, ButtonGroup, TextField } from '@material-ui/core';
 import { db } from '../../db';
-import firebase from 'firebase/app'
+/* import firebase from 'firebase/app'; */
+/* import { makeStyles } from '@material-ui/core/styles'; */
+import InputLabel from '@material-ui/core/InputLabel';
+/* import FormHelperText from '@material-ui/core/FormHelperText'; */
+import FormControl from '@material-ui/core/FormControl';
+import Select from '@material-ui/core/Select';
+import MenuItem from '@material-ui/core/MenuItem';
+/* import NativeSelect from '@material-ui/core/NativeSelect'; */
 
 const validationSchema = yup.object({
   bookName: yup.string().required('Název knížky musíš vyplnit!'),
@@ -19,20 +26,23 @@ const DetailForm = () => {
       bookName: '',
       authorName: '',
       pages: '',
+      genre: '',
+      rating: '',
       date: '',
       content: '',
       characters: '',
       motto: '',
       recommendation: '',
     },
-    onSubmit: (values) => db.collection('BookList').add({
-      bookName: values.bookName,
-      authorName: values.authorName,
-      pages: values.pages,
-      date: values.date
-      /* date: firebase.firestore.FieldValue.serverTimestamp() */
-    }),
-   /*  console.log(JSON.stringify(values)), */
+    onSubmit: (values) =>
+      db.collection('BookList').add({
+        bookName: values.bookName,
+        authorName: values.authorName,
+        pages: values.pages,
+        date: values.date,
+      }),
+    /* date: firebase.firestore.FieldValue.serverTimestamp() */
+    /* console.log(JSON.stringify(values)), */
     validationSchema: validationSchema,
   });
   /* const myPrint = (form) => {
@@ -42,6 +52,19 @@ const DetailForm = () => {
     newwin.print();
     newwin.close();
   }; */
+
+  const genres = [
+    'beletrie',
+    'sci-fi',
+    'komiks',
+    'humor',
+    'dobrodružné',
+    'vzdělávací',
+    'poezie',
+    'fantazy',
+  ];
+
+  const rating = ['😞', '😏', '😐', '😊', '🤩'];
 
   return (
     <div className="container">
@@ -94,6 +117,48 @@ const DetailForm = () => {
         {/* <Button onClick={window.print} variant="outlined">
           Vytisknout
         </Button> */}
+        <FormControl>
+          <InputLabel>Žánr</InputLabel>
+          <Select
+            id="genre"
+            name="genre"
+            style={{ width: '45%', marginTop: '2.5rem' }}
+            value={formik.values.genre}
+            onChange={formik.handleChange}
+          >
+            {genres.map((genre) => (
+              <MenuItem
+                name={genre}
+                key={genre}
+                value={genre}
+                onChange={formik.handleChange}
+              >
+                {genre}
+              </MenuItem>
+            ))}
+          </Select>
+        </FormControl>
+        <FormControl>
+          <InputLabel>Hodnocení</InputLabel>
+          <Select
+            id="rating"
+            name="rating"
+            style={{ width: '45%', marginTop: '2.5rem' }}
+            value={formik.values.rating}
+            onChange={formik.handleChange}
+          >
+            {rating.map((rate) => (
+              <MenuItem
+                name={rate}
+                key={rate}
+                value={rate}
+                onChange={formik.handleChange}
+              >
+                {rate}
+              </MenuItem>
+            ))}
+          </Select>
+        </FormControl>
         <TextField
           id="date"
           name="date"
