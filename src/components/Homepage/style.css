@@ -9,7 +9,7 @@
 }
 
 
-.menu--odkazy a{
+.menu--item {
   margin: 10px;
   padding: 10px;
   text-transform: uppercase;
@@ -19,9 +19,9 @@
   font-family: 'Bangers', sans-serif;
 }
 
-.menu--odkazy{
+.menu--items{
 
-  margin: 30px;
+  margin: 15px;
   
 }
 
@@ -41,14 +41,14 @@
 }
 
 .hero--image {
-  width:50%
+background-image: url(assets/monsterlibrary.svg);
+background-size: contain;
+height: 100px;
 }
 
-.heroimage {
-background-image: url(assets/monsterlibrary.svg);
-background-size: cover;
-width: 100%;
-}
+/* .heroimage {
+
+} */
 
 .hero--description {
   width: 50%;

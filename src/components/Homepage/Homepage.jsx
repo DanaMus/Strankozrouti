@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './style.css';
 
 export const Homepage = () => {
@@ -6,12 +7,19 @@ export const Homepage = () => {
 
   return (
 <>
-    <div className="menu">
+<div className="menu">
       <button className="prihlasit">Přihlásit se</button>
-      <div className="menu--odkazy">
-        <a>domů</a>
-        <a>Zapsat knížku</a>
-        <a>o projektu</a>
+      <div className="menu--items">
+      <Link to="/" className='menu--item'>Domů</Link>
+      <div>
+        <Link to="/zjednoduseny" className='menu--item'>Zjednodušený zápis</Link>
+      </div>
+      <div>
+        <Link to="/detailni" className='menu--item'>Podrobný zápis</Link>
+      </div>
+      <div>
+        <Link to="/prectene" className='menu--item'>Přečtené knihy</Link>
+      </div>
       </div>
       <div className="logo"></div>
     </div>
@@ -23,7 +31,6 @@ export const Homepage = () => {
       <button>Zapsat knížku</button>
     </div>
     <div className="hero--image">
-      <img className="heroimage"></img>
     </div>
     </div>
 
