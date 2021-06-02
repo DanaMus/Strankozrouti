@@ -117,12 +117,13 @@ const DetailForm = () => {
         {/* <Button onClick={window.print} variant="outlined">
           Vytisknout
         </Button> */}
-        <FormControl>
+        <FormControl
+          style={{ width: '45%', marginTop: '1rem', marginBottom: '0.5rem' }}
+        >
           <InputLabel>Žánr</InputLabel>
           <Select
             id="genre"
             name="genre"
-            style={{ width: '45%', marginTop: '2.5rem' }}
             value={formik.values.genre}
             onChange={formik.handleChange}
           >
@@ -138,12 +139,13 @@ const DetailForm = () => {
             ))}
           </Select>
         </FormControl>
-        <FormControl>
+        <FormControl
+          style={{ width: '45%', marginTop: '1rem', marginBottom: '0.5rem' }}
+        >
           <InputLabel>Hodnocení</InputLabel>
           <Select
             id="rating"
             name="rating"
-            style={{ width: '45%', marginTop: '2.5rem' }}
             value={formik.values.rating}
             onChange={formik.handleChange}
           >
