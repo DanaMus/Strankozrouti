@@ -61,7 +61,7 @@ const DetailForm = () => {
     'dobrodružné',
     'vzdělávací',
     'poezie',
-    'fantazy',
+    'fantasy',
   ];
 
   const rating = ['😞', '😏', '😐', '😊', '🤩'];
