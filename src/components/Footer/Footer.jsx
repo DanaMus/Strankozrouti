@@ -7,7 +7,8 @@ export const Footer = () => {
   return (
     
   <footer>
-    <p>Projekt vytvořen v rámci Czechitas DA web</p>
+    <p>Tento projekt byl vytvořen v rámci Digitální akademie</p>
+    <img className='czechitas_logo' src='/assets/czechitas.png' alt='czechitaslogo'></img>
   </footer>
 
   )

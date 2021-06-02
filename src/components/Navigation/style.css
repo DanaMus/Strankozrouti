@@ -3,23 +3,23 @@
   flex-direction: row;
   align-items: flex-end;
   justify-content: space-between;
-  margin-bottom: 20px;
+  background-color: white;
+  border-radius: 20px;
 }
 
 
 .menu--item {
-  margin: 10px;
   padding: 10px;
   text-transform: uppercase;
   text-decoration: none;
   color: black;
-  font-size: 26px;
+  font-size: 2em;
   font-family: 'Bangers', sans-serif;
 }
 
 .menu--items{
 
-  margin: 15px;
+  margin: 2em;
   
 }
 
@@ -30,9 +30,9 @@
   background-repeat: no-repeat;
   width: 200px;
   height: 70px;
-  margin: 10px;
+  margin: 20px;
 }
 
 .btn--prihlasit {
-  margin: 10px;
+  margin: 20px;
 }

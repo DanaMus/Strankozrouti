@@ -1,26 +1,35 @@
-
+.homepage_container {
+  background-color: white;
+  border-radius: 20px;
+}
 
 .hero_container {
  display: flex;
- padding:20px;
+ padding: 10px;
+ margin-top: 50px;
+ margin-bottom: 50px;
 }
 
 .hero--image {
   width: 50%;
 }
 
+.hero--monster {
+  padding: 20px;
+}
+
 
 .hero--description {
   width: 50%;
   text-align: center;
+  padding: 20px;
  }
 
 h1 {
-padding-top: 10px;
+padding-top: 40px;
 font-size: 4em;
 font-family: 'Bangers';
 font-weight: 400;
-
 }
 
 button {
@@ -37,4 +46,6 @@ button:hover {
   background-color: rgb(202, 41, 148);
   box-shadow:5px 5px 5px rgb(128, 124, 124);
 }
+
+
 

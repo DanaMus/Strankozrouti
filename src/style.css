@@ -7,5 +7,6 @@
 
 html {
   font-family: 'Roboto';
-  background-color: whitesmoke;
+  background-color: rgb(43, 43, 177);
+  margin: 20px 50px;
 }
