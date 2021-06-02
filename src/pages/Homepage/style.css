@@ -1,0 +1,40 @@
+
+
+.hero_container {
+ display: flex;
+ padding:20px;
+}
+
+.hero--image {
+  width: 50%;
+}
+
+
+.hero--description {
+  width: 50%;
+  text-align: center;
+ }
+
+h1 {
+padding-top: 10px;
+font-size: 4em;
+font-family: 'Bangers';
+font-weight: 400;
+
+}
+
+button {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: rgb(43, 43, 177);
+  color: white;
+  font-family:'Bangers';
+  font-size: 1.5em;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: rgb(202, 41, 148);
+  box-shadow:5px 5px 5px rgb(128, 124, 124);
+}
+

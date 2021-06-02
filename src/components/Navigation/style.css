@@ -1,5 +1,3 @@
-
-
 .menu {
   display: flex;
   flex-direction: row;
@@ -27,37 +25,14 @@
 
 
 .logo {
-  background-image: url(assets/logo.svg);
+  background-image: url(/src/assets/logo.svg);
   background-size: contain;
   background-repeat: no-repeat;
   width: 200px;
-  height: 50px;
+  height: 70px;
+  margin: 10px;
 }
 
-.hero_container {
- display: flex;
- align-items: center;
- padding:20px;
-}
-
-.hero--image {
-background-image: url(assets/monsterlibrary.svg);
-background-size: contain;
-height: 100px;
-}
-
-/* .heroimage {
-
-} */
-
-.hero--description {
-  width: 50%;
- }
-
-h1 {
-padding: 20px;
-font-size: 32px;
-font-family: 'Bangers';
-font-weight: 400;
-
+.btn--prihlasit {
+  margin: 10px;
 }
