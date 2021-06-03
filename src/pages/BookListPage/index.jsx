@@ -6,7 +6,7 @@ const BookListPage = () => {
   return (
     <>
     <div className='booklist_container'>
-      <h1>Seznam přečtených knih</h1>
+      <h1>Přečtené knihy</h1>
       <BookList />
     </div>
     </>

@@ -17,9 +17,6 @@ const App = () => {
         <Route exact path="/">
           <Homepage />
         </Route>
-        <Route path="/zjednoduseny">
-          <Simpleformpage />
-        </Route>
         <Route path="/detailni">
           <Detailformpage />
         </Route>

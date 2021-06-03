@@ -13,7 +13,7 @@ export const InfoIcon = () => {
     <img className="infoicon--image_monster"src='assets/monsterleft.svg'></img>
    </div>
       <div className="infoicon--description">
-      <h3>Rychle</h3>
+      <h3>Jednoduše</h3>
       <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum reprehenderit natus officiis rem ipsum expedita, doloremque aliquid similique iste, impedit tenetur repudiandae perferendis cum beatae maiores provident sit quibusdam dolore?</p>
       </div>
       </div>
@@ -23,7 +23,7 @@ export const InfoIcon = () => {
     <img className="infoicon--image_monster"src='assets/monsterleft.svg'></img>
    </div>
       <div className="infoicon--description">
-      <h3>Rychle</h3>
+      <h3>Přehledně</h3>
       <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum reprehenderit natus officiis rem ipsum expedita, doloremque aliquid similique iste, impedit tenetur repudiandae perferendis cum beatae maiores provident sit quibusdam dolore?</p>
       </div>
       </div>
@@ -33,7 +33,7 @@ export const InfoIcon = () => {
     <img className="infoicon--image_monster"src='assets/monsterleft.svg'></img>
    </div>
       <div className="infoicon--description">
-      <h3>Rychle</h3>
+      <h3>zábavně</h3>
       <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum reprehenderit natus officiis rem ipsum expedita, doloremque aliquid similique iste, impedit tenetur repudiandae perferendis cum beatae maiores provident sit quibusdam dolore?</p>
       </div>
       </div>
