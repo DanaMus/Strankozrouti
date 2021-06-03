@@ -2,5 +2,19 @@ footer {
   background-color: #8bbbdb;
   padding: 15px;
   font-size: 26px;
-  text-align: center;
+  display: flex;
+  font-family: 'Bangers';
+  background-color: white;
+  justify-content: center;
+  border-radius: 20px;
+}
+
+.czechitas_logo {
+  margin: 0.5em;
+  width: 250px;
+  height: 100px;
+}
+
+footer p {
+  margin: 2em;
 }

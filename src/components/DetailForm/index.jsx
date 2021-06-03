@@ -77,7 +77,7 @@ const DetailForm = () => {
           alt="Stránkožrout"
           className="form__img"
         />
-        <h1 className="form__heading">Základní informace:</h1>
+        <h2>Základní informace:</h2>
         <TextField
           id="bookName"
           name="bookName"
@@ -181,7 +181,7 @@ const DetailForm = () => {
             Uložit stručný záznam
           </Button>
         </div>
-        <h1 className="form__heading">Podrobnosti:</h1>
+        <h2>Podrobnosti:</h2>
         <TextField
           id="content"
           name="content"

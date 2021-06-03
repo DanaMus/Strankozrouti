@@ -27,18 +27,24 @@ form {
 
 .form__img {
   position: absolute;
-  top: 280px;
+  top: 260px;
   right: 30px;
   width: 30%;
 }
 
 .short__button {
   position: absolute;
-  top: 490px;
+  top: 470px;
   right: 30px;
 }
 
-@media screen and (max-width: 700px) {
+h2 {
+  font-size: 2em;
+  font-family: 'Bangers';
+  font-weight: 400;
+}
+
+@media screen and (max-width: 800px) {
   .short__button {
     position: static;
     margin-top: 30px;
@@ -48,16 +54,15 @@ form {
     right: 0;
     top: 320px;
   }
+  .form__logo {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 500px) {
   .form__img {
     right: 0;
     width: 40%;
-  }
-
-  .form__logo {
-    top: 10px;
   }
 
   .container {
