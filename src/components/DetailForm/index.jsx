@@ -5,13 +5,10 @@ import * as yup from 'yup';
 import { Button, ButtonGroup, TextField } from '@material-ui/core';
 import { db } from '../../db';
 /* import firebase from 'firebase/app'; */
-/* import { makeStyles } from '@material-ui/core/styles'; */
 import InputLabel from '@material-ui/core/InputLabel';
-/* import FormHelperText from '@material-ui/core/FormHelperText'; */
 import FormControl from '@material-ui/core/FormControl';
 import Select from '@material-ui/core/Select';
 import MenuItem from '@material-ui/core/MenuItem';
-/* import NativeSelect from '@material-ui/core/NativeSelect'; */
 
 const validationSchema = yup.object({
   bookName: yup.string().required('Název knížky musíš vyplnit!'),
@@ -33,6 +30,7 @@ const DetailForm = () => {
       characters: '',
       motto: '',
       recommendation: '',
+      optional: '',
     },
     onSubmit: (values) =>
       db.collection('BookList').add({
@@ -79,7 +77,7 @@ const DetailForm = () => {
           alt="Stránkožrout"
           className="form__img"
         />
-        <h1>Základní informace:</h1>
+        <h1 className="form__heading">Základní informace:</h1>
         <TextField
           id="bookName"
           name="bookName"
@@ -111,14 +109,11 @@ const DetailForm = () => {
           error={formik.touched.pages && Boolean(formik.errors.pages)}
           helperText={formik.touched.pages && formik.errors.pages}
         />
-        {/* <Button type="submit" variant="outlined">
-          Uložit
-        </Button> */}
         {/* <Button onClick={window.print} variant="outlined">
           Vytisknout
         </Button> */}
         <FormControl
-          style={{ width: '45%', marginTop: '1rem', marginBottom: '0.5rem' }}
+          style={{ width: '50%', marginTop: '1rem', marginBottom: '0.5rem' }}
         >
           <InputLabel>Žánr</InputLabel>
           <Select
@@ -140,7 +135,7 @@ const DetailForm = () => {
           </Select>
         </FormControl>
         <FormControl
-          style={{ width: '45%', marginTop: '1rem', marginBottom: '0.5rem' }}
+          style={{ width: '50%', marginTop: '1rem', marginBottom: '0.5rem' }}
         >
           <InputLabel>Hodnocení</InputLabel>
           <Select
@@ -167,7 +162,7 @@ const DetailForm = () => {
           label="Datum dočtení"
           type="date"
           margin="normal"
-          style={{ width: '45%' }}
+          style={{ width: '50%' }}
           value={formik.values.date}
           onChange={formik.handleChange}
           error={formik.touched.date && Boolean(formik.errors.date)}
@@ -176,7 +171,17 @@ const DetailForm = () => {
             shrink: true,
           }}
         />
-        <h1>Podrobnosti:</h1>
+        <div className="short__button">
+          <Button
+            type="submit"
+            size="large"
+            variant="contained"
+            color="secondary"
+          >
+            Uložit stručný záznam
+          </Button>
+        </div>
+        <h1 className="form__heading">Podrobnosti:</h1>
         <TextField
           id="content"
           name="content"
@@ -222,6 +227,17 @@ const DetailForm = () => {
           value={formik.values.recommendation}
           onChange={formik.handleChange}
         />
+        <TextField
+          id="optional"
+          name="optional"
+          label="Ostatní"
+          margin="normal"
+          multiline
+          rows={3}
+          rowsMax={100}
+          value={formik.values.optional}
+          onChange={formik.handleChange}
+        />
         <ButtonGroup
           className="buttongroup"
           color="primary"
@@ -229,20 +245,31 @@ const DetailForm = () => {
           style={{ marginTop: '50px' }}
           aria-label="outlined primary button group"
         >
-          <Button type="submit">Nakrmit</Button>
-          <Button type="reset">Smazat</Button>
           <Button
+            size="large"
+            variant="contained"
+            color="secondary"
+            type="submit"
+          >
+            Uložit
+          </Button>
+          <Button size="large" variant="contained" color="primary" type="reset">
+            Smazat
+          </Button>
+          {/* <Button
             onClick={
-              window.print
-            } /* {myPrint} */ /* {printJS('docs/printjs.pdf')} */ /* {printJS({
+              window.print */}
+          {/* } /* {myPrint} */
+          /* {printJS('docs/printjs.pdf')} */
+          /* {printJS({
               printable: 'printJS-form',
               type: 'html',
               scanStyles: true,
               css: 'style.css',
-            })} */
-          >
+            })} */}
+          {/* >
             Vytisknout
-          </Button>
+          </Button> */}
         </ButtonGroup>
       </form>
     </div>

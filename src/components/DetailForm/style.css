@@ -14,6 +14,10 @@ form {
   position: relative;
 }
 
+.form__heading {
+  font-size: 2em;
+}
+
 .form__logo {
   position: absolute;
   top: 30px;
@@ -23,15 +27,37 @@ form {
 
 .form__img {
   position: absolute;
-  top: 350px;
+  top: 280px;
   right: 30px;
   width: 30%;
+}
+
+.short__button {
+  position: absolute;
+  top: 490px;
+  right: 30px;
+}
+
+@media screen and (max-width: 700px) {
+  .short__button {
+    position: static;
+    margin-top: 30px;
+  }
+  .form__img {
+    width: 40%;
+    right: 0;
+    top: 320px;
+  }
 }
 
 @media screen and (max-width: 500px) {
   .form__img {
     right: 0;
     width: 40%;
+  }
+
+  .form__logo {
+    top: 10px;
   }
 
   .container {
