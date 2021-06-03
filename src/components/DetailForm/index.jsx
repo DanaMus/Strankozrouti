@@ -103,7 +103,7 @@ const DetailForm = () => {
           name="pages"
           label="Počet stran"
           margin="normal"
-          style={{ width: '45%' }}
+          style={{ width: '50%' }}
           value={formik.values.pages}
           onChange={formik.handleChange}
           error={formik.touched.pages && Boolean(formik.errors.pages)}
