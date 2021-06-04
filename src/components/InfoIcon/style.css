@@ -15,14 +15,15 @@
 
 .infoicon--description {
   background-color: white;
-  padding: 20px
+  padding: 20px;
+  text-align: center;
+  height: 250px;
 }
 
 .infoicon--description h3 {
   font-family: 'Bangers';
   font-size: 2em;
   font-weight: 400;
-  text-align: center;
 }
 
 .infoicon--image{

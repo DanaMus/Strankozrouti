@@ -2,7 +2,7 @@ import React from 'react';
 import './style.css';
 
 export const InfoIcon = () => {
-
+  
 
   return (
     
@@ -14,7 +14,7 @@ export const InfoIcon = () => {
    </div>
       <div className="infoicon--description">
       <h3>Jednoduše</h3>
-      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum reprehenderit natus officiis rem ipsum expedita, doloremque aliquid similique iste, impedit tenetur repudiandae perferendis cum beatae maiores provident sit quibusdam dolore?</p>
+      <p>Nevíš co zapsat do čtenářského deníčku? Neznáš jeho strukturu? Náš formulář tě navede. Vyplň přednastavená políčka a pokud potřebuješ, přidej si vlastní. Po vyplnění si zápis můžeš uložit nebo vytisknout.</p>
       </div>
       </div>
 
@@ -24,7 +24,7 @@ export const InfoIcon = () => {
    </div>
       <div className="infoicon--description">
       <h3>Přehledně</h3>
-      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum reprehenderit natus officiis rem ipsum expedita, doloremque aliquid similique iste, impedit tenetur repudiandae perferendis cum beatae maiores provident sit quibusdam dolore?</p>
+      <p>Všechny zapsané knížky najdeš přehledně pod záložkou přečtené knihy!</p>
       </div>
       </div>
 
@@ -33,11 +33,12 @@ export const InfoIcon = () => {
     <img className="infoicon--image_monster"src='assets/monsterleft.svg'></img>
    </div>
       <div className="infoicon--description">
-      <h3>zábavně</h3>
-      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum reprehenderit natus officiis rem ipsum expedita, doloremque aliquid similique iste, impedit tenetur repudiandae perferendis cum beatae maiores provident sit quibusdam dolore?</p>
+      <h3>Zábavně</h3>
+      <p>Každou přečtenou knížkou nakrmíš stránkožrouta. On ti za to rád poví kolik stránek už máš přečtených a jaký žánr u tebe zrovna vede.</p>
       </div>
       </div>
       </div>
 
   )
 }
+

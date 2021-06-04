@@ -8,5 +8,9 @@
 html {
   font-family: 'Roboto';
   background-color: rgb(43, 43, 133);
+}
+
+body {
   margin: 0;
+  padding: 0;
 }
