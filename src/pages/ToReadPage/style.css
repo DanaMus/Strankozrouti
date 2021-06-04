@@ -1,0 +1,13 @@
+.toread__container {
+  background-color: white;
+  min-height: 500px;
+  padding: 30px;
+}
+
+.toread__text {
+  padding: 100px;
+}
+
+.toread__add {
+  cursor: pointer;
+}

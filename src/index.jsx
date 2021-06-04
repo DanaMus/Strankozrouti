@@ -8,6 +8,7 @@ import { Homepage } from './pages/Homepage/Homepage';
 import { Navigation } from './components/Navigation/Navigation';
 import { Footer } from './components/Footer/Footer';
 import BookListPage from './pages/BookListPage';
+import ToReadPage from './pages/ToReadPage';
 
 const App = () => {
   return (
@@ -22,6 +23,9 @@ const App = () => {
         </Route>
         <Route path="/prectene">
           <BookListPage />
+        </Route>
+        <Route path="/kprecteni">
+          <ToReadPage />
         </Route>
         <Route path="/"></Route>
       </Switch>
