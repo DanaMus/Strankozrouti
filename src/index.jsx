@@ -10,17 +10,21 @@ import { Footer } from './components/Footer/Footer';
 import BookListPage from './pages/BookListPage';
 import ToReadPage from './pages/ToReadPage';
 import AboutPage from './pages/AboutPage';
+import DetailBook from './components/DetailBook';
 
 const App = () => {
   return (
     <Router>
       <Navigation />
       <Switch>
-        <Route exact path="/">
+        <Route path="/" exact>
           <Homepage />
         </Route>
         <Route path="/detailni">
           <Detailformpage />
+        </Route>
+        <Route path="/prectene/:id">
+          <DetailBook />
         </Route>
         <Route path="/prectene">
           <BookListPage />
@@ -28,10 +32,10 @@ const App = () => {
         <Route path="/kprecteni">
           <ToReadPage />
         </Route>
-        <Route path="/oprojektu">
+        <Route path="/oprojektu" exact>
           <AboutPage />
         </Route>
-        <Route path="/"></Route>
+        <Route path="/" exact></Route>
       </Switch>
       <Footer />
     </Router>
