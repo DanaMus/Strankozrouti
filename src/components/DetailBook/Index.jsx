@@ -20,6 +20,7 @@ export const DetailBook = () => {
     <>
       <h3>ID knížky: {id}</h3>
       <h3>{bookDetail.bookName}</h3>
+      <button onClick={window.print}>Vytisknout</button>
       {/* <h2>{film.jmeno}</h2>
       <p>{film.obrazek}</p>
       <img src={film.obrazek} alt="" />

@@ -38,6 +38,13 @@ const DetailForm = () => {
         authorName: values.authorName,
         pages: values.pages,
         date: values.date,
+        genre: values.genre,
+        rating: values.rating,
+        characters: values.characters,
+        content: values.content,
+        motto: values.motto,
+        recommendation: values.recommendation,
+        optional: values.optional,
       }),
     /* date: firebase.firestore.FieldValue.serverTimestamp() */
     /* console.log(JSON.stringify(values)), */
