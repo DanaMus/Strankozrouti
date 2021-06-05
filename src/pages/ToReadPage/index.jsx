@@ -3,6 +3,7 @@ import './style.css';
 import { Button, TextField } from '@material-ui/core';
 import { useFormik } from 'formik';
 import * as yup from 'yup';
+import ToRead from '../../components/ToRead/ToRead';
 import { db } from '../../db';
 
 const validationSchema = yup.object({
@@ -15,11 +16,11 @@ const ToReadPage = () => {
       toread: '',
     },
     onSubmit: (values) =>
-      /* testovací verze console.log, po odkomentování db.collection se data odešlou na Firebase... dořešit propsání na stránku a vynulování formuláře, tlačítko delete a completed */
-      /* db.collection('ToRead').add({
+      db.collection('ToRead').add({
         toRead: values.toread,
-      }), */
-      console.log(JSON.stringify(values)),
+        
+      }),
+      /* console.log(JSON.stringify(values)), */
     validationSchema: validationSchema,
   });
   return (
@@ -66,6 +67,8 @@ const ToReadPage = () => {
             Přidat knížku
           </Button>
         </form>
+        <div className='toread__books'>
+        <ToRead/></div>
       </div>
     </>
   );
