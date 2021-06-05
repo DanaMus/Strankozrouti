@@ -24,7 +24,7 @@ export const Navigation = () => {
           Plánovaná četba
         </Link>
       </div>
-      <button className="btn--prihlasit">Přihlásit se</button>
+      <button className="btn_login">Přihlásit se</button>
     </div>
   );
 };

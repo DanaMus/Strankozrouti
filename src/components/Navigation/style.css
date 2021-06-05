@@ -34,6 +34,20 @@
   margin: 20px;
 }
 
-.btn--prihlasit {
-  margin: 20px;
+.btn_login {
+  margin-top: 20px;
+  margin-bottom: 50px;
+  padding: 20px;
+  background-color: rgb(43, 43, 133);
+  color: white;
+  font-family:'Bangers';
+  
+  font-weight: 400;
+  font-size: 1em;
+  border-radius: 5px;
+}
+
+.btn_login:hover {
+    background-color: rgb(202, 41, 148);
+    box-shadow:5px 5px 5px rgb(128, 124, 124);
 }
