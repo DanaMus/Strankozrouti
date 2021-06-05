@@ -33,6 +33,7 @@ h1 {
 font-size: 1em;
 font-family: 'Bangers';
 font-weight: 400;
+
 }
 
 button {
@@ -42,6 +43,8 @@ button {
   background-color: rgb(43, 43, 133);
   color: white;
   font-family:'Bangers';
+  
+  font-weight: 400;
   font-size: 1em;
   border-radius: 5px;
 }
@@ -86,6 +89,7 @@ button:hover {
   
       button {
         font-size: 2em;
+        
       }
   
   }

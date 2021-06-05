@@ -15,6 +15,7 @@
   color: black;
   font-size: 2em;
   font-family: 'Bangers', sans-serif;
+  text-transform: uppercase;
 }
 
 .menu--items{

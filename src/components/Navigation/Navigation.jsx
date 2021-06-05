@@ -5,7 +5,8 @@ import './style.css';
 export const Navigation = () => {
   return (
     <div className="menu">
-      <div className="logo"></div>
+      <Link to="/" className="logo">
+        </Link>
       <div className="menu--items">
         <Link to="/" className="menu--item">
           Domů
