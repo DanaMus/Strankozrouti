@@ -1,14 +1,15 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { db } from '../../db';
 import './style.css';
 
 export const DetailBook = () => {
   const { id } = useParams();
+  const [bookDetail, setBookDetail] = useState('');
 
   useEffect(() => {
     const uklid = db.collection('BookList').onSnapshot((snapshot) => {
-      setBooks(
+      setBookDetail(
         snapshot.docs.map((doc) => {
           const data = doc.data();
           data.id = doc.id;
@@ -26,7 +27,7 @@ export const DetailBook = () => {
   return (
     <>
       <h3>ID knížky: {id}</h3>
-      <h3>{detailBook.bookName}</h3>
+      <h3>{bookDetail.bookName}</h3>
       {/* <h2>{film.jmeno}</h2>
       <p>{film.obrazek}</p>
       <img src={film.obrazek} alt="" />
