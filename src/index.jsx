@@ -9,6 +9,7 @@ import { Navigation } from './components/Navigation/Navigation';
 import { Footer } from './components/Footer/Footer';
 import BookListPage from './pages/BookListPage';
 import ToReadPage from './pages/ToReadPage';
+import AboutPage from './pages/AboutPage';
 
 const App = () => {
   return (
@@ -26,6 +27,9 @@ const App = () => {
         </Route>
         <Route path="/kprecteni">
           <ToReadPage />
+        </Route>
+        <Route path="/oprojektu">
+          <AboutPage />
         </Route>
         <Route path="/"></Route>
       </Switch>

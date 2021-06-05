@@ -10,6 +10,9 @@ export const Navigation = () => {
         <Link to="/" className="menu--item">
           Domů
         </Link>
+        <Link to="/oprojektu" className="menu--item">
+          O projektu
+        </Link>
         <Link to="/detailni" className="menu--item">
           Zapsat knížku
         </Link>
