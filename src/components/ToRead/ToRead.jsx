@@ -18,7 +18,15 @@ const ToRead = () => {
   return (
     <ul>
       {toRead.map((book) => (
-        <li key={book.id}>{book.toRead}</li>
+        <li key={book.id}>{book.toRead}
+        <button className='checked'>Splněno</button>
+        <button className='delete' onClick={() => {
+          const confirmation = confirm('Opravdu chceš záznam smazat?');
+          {confirmation ? db.collection('ToRead').doc(book.id).delete() : null}
+          
+        }}>Smazat</button>
+        </li>
+        
       ))}
     </ul>
   );
