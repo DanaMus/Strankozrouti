@@ -18,9 +18,9 @@ const ToReadPage = () => {
     onSubmit: (values) =>
       db.collection('ToRead').add({
         toRead: values.toread,
-        
       }),
-      /* console.log(JSON.stringify(values)), */
+
+    /* console.log(JSON.stringify(values)), */
     validationSchema: validationSchema,
   });
   return (
@@ -67,8 +67,9 @@ const ToReadPage = () => {
             Přidat knížku
           </Button>
         </form>
-        <div className='toread__books'>
-        <ToRead/></div>
+        <div className="toread__books">
+          <ToRead />
+        </div>
       </div>
     </>
   );

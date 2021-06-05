@@ -17,10 +17,20 @@ export const DetailBook = () => {
     return <>Speciální film</>;
   }*/
   return (
-    <>
-      <h3>ID knížky: {id}</h3>
-      <h3>{bookDetail.bookName}</h3>
-      <button onClick={window.print}>Vytisknout</button>
+    <div className="book__container">
+      {/* <h3>ID knížky: {id}</h3> */}
+      <h3>Autor: {bookDetail.authorName}</h3>
+      <h3>Název: {bookDetail.bookName}</h3>
+      <p>Date: {bookDetail.date}</p>
+      <p>Počet stránek: {bookDetail.pages}</p>
+      <p>Hodnocení: {bookDetail.rating}</p>
+      <p>Žánr: {bookDetail.genre}</p>
+      <p>Hlavní postavy: {bookDetail.characters}</p>
+      <p>Obsah: {bookDetail.content}</p>
+      <p>Motto: {bookDetail.motto}</p>
+      <p>Doporučení: {bookDetail.recommendation}</p>
+      <p>Ostatní: {bookDetail.optional}</p>
+      {/* <button onClick={window.print}>Vytisknout</button> */}
       {/* <h2>{film.jmeno}</h2>
       <p>{film.obrazek}</p>
       <img src={film.obrazek} alt="" />
@@ -30,7 +40,7 @@ export const DetailBook = () => {
       <p>{film.reize}</p>
       <h3>Obsah</h3>
       <p>{film.obsah}</p> */}
-    </>
+    </div>
   );
 };
 
