@@ -30,7 +30,7 @@ export const DetailBook = () => {
       <p>Motto: {bookDetail.motto}</p>
       <p>Doporučení: {bookDetail.recommendation}</p>
       <p>Ostatní: {bookDetail.optional}</p>
-      {/* <button onClick={window.print}>Vytisknout</button> */}
+      <button onClick={window.print}>Vytisknout</button>
       {/* <h2>{film.jmeno}</h2>
       <p>{film.obrazek}</p>
       <img src={film.obrazek} alt="" />
