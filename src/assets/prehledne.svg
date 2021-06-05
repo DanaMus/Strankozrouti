@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="45.049984mm"
+   height="60.325317mm"
+   viewBox="0 0 45.049984 60.325317"
+   version="1.1"
+   id="svg8"
+   inkscape:version="1.0.2-2 (e86c870879, 2021-01-15)"
+   sodipodi:docname="prehledne.svg">
+  <defs
+     id="defs2" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="2.6404834"
+     inkscape:cx="84.316416"
+     inkscape:cy="144.46544"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     inkscape:document-rotation="0"
+     showgrid="false"
+     inkscape:window-width="1920"
+     inkscape:window-height="1001"
+     inkscape:window-x="-9"
+     inkscape:window-y="-9"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Vrstva 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-43.843216,-96.319626)">
+    <rect
+       style="opacity:0.976645;fill:#ececec;stroke-width:0.500921;stroke-linecap:square;paint-order:stroke fill markers"
+       id="rect835"
+       width="36.641365"
+       height="53.51799"
+       x="52.251835"
+       y="103.12695"
+       ry="4.4527259" />
+    <rect
+       style="opacity:0.976645;fill:#000000;stroke-width:0.523096;stroke-linecap:square;paint-order:stroke fill markers"
+       id="rect837"
+       width="38.482506"
+       height="55.569195"
+       x="43.843216"
+       y="96.319626"
+       ry="4.6233873" />
+    <rect
+       style="opacity:0.976645;fill:#cccccc;stroke-width:0.500921;stroke-linecap:square;paint-order:stroke fill markers"
+       id="rect839"
+       width="36.641365"
+       height="53.51799"
+       x="44.765411"
+       y="97.312759"
+       ry="4.4527259" />
+    <rect
+       style="opacity:0.976645;fill:#999999;stroke-width:0.529167;stroke-linecap:square;paint-order:stroke fill markers"
+       id="rect841"
+       width="27.240274"
+       height="1.2768878"
+       x="49.51487"
+       y="108.74828"
+       ry="0.63844389" />
+    <rect
+       style="opacity:0.976645;fill:#999999;stroke-width:0.529167;stroke-linecap:square;paint-order:stroke fill markers"
+       id="rect843"
+       width="27.240274"
+       height="1.2768878"
+       x="49.727684"
+       y="115.2746"
+       ry="0.63844389" />
+    <rect
+       style="opacity:0.976645;fill:#999999;stroke-width:0.529167;stroke-linecap:square;paint-order:stroke fill markers"
+       id="rect845"
+       width="27.240274"
+       height="1.2768878"
+       x="49.656746"
+       y="122.08466"
+       ry="0.63844389" />
+  </g>
+</svg>

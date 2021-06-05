@@ -10,7 +10,7 @@ export const InfoIcon = () => {
       
       <div className="infoicon">
     <div className="infoicon--image">
-    <img className="infoicon--image_monster"src='assets/monsterleft.svg'></img>
+    <img className="infoicon--image_monster"src='assets/jednoduse.svg'></img>
    </div>
       <div className="infoicon--description">
       <h3>Jednoduše</h3>
@@ -20,7 +20,7 @@ export const InfoIcon = () => {
 
       <div className="infoicon">
     <div className="infoicon--image">
-    <img className="infoicon--image_monster"src='assets/monsterleft.svg'></img>
+    <img className="infoicon--image_monster"src='assets/prehledne.svg'></img>
    </div>
       <div className="infoicon--description">
       <h3>Přehledně</h3>
@@ -30,7 +30,7 @@ export const InfoIcon = () => {
 
       <div className="infoicon">
     <div className="infoicon--image">
-    <img className="infoicon--image_monster"src='assets/monsterleft.svg'></img>
+    <img className="infoicon--image_monster"src='assets/zabavne.svg'></img>
    </div>
       <div className="infoicon--description">
       <h3>Zábavně</h3>

@@ -9,7 +9,7 @@
 
 .infoicon {
   background-color: white;
-  width: 50%;
+  width: 70%;
   margin-bottom: 50px;
 }
 
@@ -28,12 +28,20 @@
 
 .infoicon--image{
   background-color: rgb(218, 133, 218);
+  display:flex;
+  justify-content: center;
   height: 150px;
+  padding: 20px;
+  /* position:relative;  */
 }
 
 .infoicon--image_monster {
-  width: 50px;
-  height: 50px;
+  width: 100px;
+  height: 100px;
+  /* position:absolute; 
+  top: 20px;
+  left:50%;
+  right: 50%; */
 }
 
 @media screen and (min-width: 500px) {
