@@ -8,16 +8,8 @@ export const DetailBook = () => {
   const [bookDetail, setBookDetail] = useState('');
 
   useEffect(() => {
-    const uklid = db.collection('BookList').onSnapshot((snapshot) => {
-      setBookDetail(
-        snapshot.docs.map((doc) => {
-          const data = doc.data();
-          data.id = doc.id;
-          return data;
-        }),
-      );
-    });
-    return uklid;
+    const docRef = db.collection('BookList').doc(id);
+    docRef.get().then((doc) => setBookDetail(doc.data()));
   }, []);
   /* const detailBook = db.collection('BookList').find((x) => x.id === id); */
   /* const detailBook = db.collection('BookList').doc({ id }); */
