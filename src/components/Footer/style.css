@@ -1,24 +1,23 @@
 footer {
   background-color: #8bbbdb;
   padding: 15px;
-  font-size: 26px;
-  display: flex;
+  font-size: 1em;
   font-family: 'Bangers';
   background-color: white;
-  justify-content: center;
+  /* justify-content: center; */
   /* margin-left: -10px;
   margin-right: -10px;
   margin-bottom: -10px; */
 }
 
 .czechitas_logo {
-  margin: 0.5em;
-  width: 250px;
-  height: 100px;
+  
+  width: 120px;
+  height: 50px;
 }
 
 footer p {
-  margin: 2em;
+  margin: 1em;
 }
 
 @media (max-width: 480px) {

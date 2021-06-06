@@ -14,7 +14,7 @@ export const InfoIcon = () => {
    </div>
       <div className="infoicon--description">
       <h3>Jednoduše</h3>
-      <p>Nevíš co zapsat do čtenářského deníčku? Neznáš jeho strukturu? Náš formulář tě navede. Vyplň přednastavená políčka a pokud potřebuješ, přidej si vlastní. Po vyplnění si zápis můžeš uložit nebo vytisknout.</p>
+      <p>Nevíš co zapsat do čtenářského deníčku? Neznáš jeho strukturu? Náš formulář tě navede. Vyplň přednastavená políčka a pokud potřebuješ, přidej si vlastní.</p>
       </div>
       </div>
 
@@ -24,7 +24,7 @@ export const InfoIcon = () => {
    </div>
       <div className="infoicon--description">
       <h3>Přehledně</h3>
-      <p>Všechny zapsané knížky najdeš přehledně pod záložkou přečtené knihy!</p>
+      <p>Všechny zapsané knížky najdeš přehledně pod záložkou přečtené knihy. Odtud si můžeš svůj záznam vytisknout nebo uložit.</p>
       </div>
       </div>
 

@@ -14,7 +14,7 @@ if (!location.pathname.match(regex)) { return (
     
   <footer>
     <p>Tento projekt byl vytvořen v rámci Digitální akademie</p>
-    <img className='czechitas_logo' src='/assets/czechitas.png' alt='czechitaslogo'></img>
+    <a href="https://www.czechitas.cz/"><img className='czechitas_logo' src='/assets/czechitas.png' alt='czechitaslogo'></img></a>
   </footer>
 
   )} else {
