@@ -18,20 +18,20 @@ export const Navigation = () => {
        
       <div className={open ? "menu__items" : "menu__items menu__items--closed"} >
       
-        <Link to="/" className="menu__item">
+        <Link to="/" id="home" className="menu__item">
           Domů
         </Link>
-        <Link to="/oprojektu" className="menu__item">
-          O projektu
-        </Link>
-        <Link to="/detailni" className="menu__item">
+        <Link to="/detailni" id="book" className="menu__item">
           Zapsat knížku
         </Link>
-        <Link to="/prectene" className="menu__item">
+        <Link to="/prectene" id="read" className="menu__item">
           Přečtené knihy
         </Link>
-        <Link to="/kprecteni" className="menu__item">
+        <Link to="/kprecteni" id="toread" className="menu__item">
           Plánovaná četba
+        </Link>
+        <Link to="/oprojektu" id="about" className="menu__item">
+          O projektu
         </Link>
       </div>
 
