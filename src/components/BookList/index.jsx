@@ -17,15 +17,15 @@ export const BookList = () => {
     });
     return uklid;
   }, []);
-  return (
+ return (
     
     <div className="booklist__container">
       
       {books.map((book) => (
         <div key={book.id} className="booklist">
-        <a key={book.id}>
+        <p key={book.id}>
           <Link  className="book" to={`/prectene/${book.id}`}>{book.bookName}</Link>
-          </a>
+          </p>
         </div>
       ))}
       
