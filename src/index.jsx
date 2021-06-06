@@ -1,7 +1,8 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import { render } from 'react-dom';
 import './style.css';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { useLocation } from 'react-router-dom';
 import Simpleformpage from './pages/Simpleformpage';
 import Detailformpage from './pages/Detailformpage';
 import { Homepage } from './pages/Homepage/Homepage';
@@ -13,6 +14,8 @@ import AboutPage from './pages/AboutPage';
 import DetailBook from './components/DetailBook';
 
 const App = () => {
+  
+
   return (
     <Router>
       <Navigation />

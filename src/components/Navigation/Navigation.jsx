@@ -1,17 +1,21 @@
-import React, { useState }from 'react';
-import { Link } from 'react-router-dom';
+import React, { useState, useEffect }from 'react';
+import { Link, useLocation } from 'react-router-dom';
 import { HamburgerMenu } from '../HamburgerMenu/HamburgerMenu'
 import './style.css';
 
 export const Navigation = () => {
 
+  const location = useLocation();
+  useEffect(() => {
+  console.log(location.pathname);
+  },[location])
+
   const [open, setOpen] = useState(false);
   const handleClickHamburgerMenu = () => {
     setOpen(!open);
   };
-
-
-  return (
+  const regex = /prectene\/(.*)/g;
+if (!location.pathname.match(regex)) {return (
     <div className="menu">
       <Link to="/" className="logo">
         </Link>
@@ -45,5 +49,8 @@ export const Navigation = () => {
       <button className="btn_login">Přihlásit se</button>
       </div>
     </div>
-  );
+  )} else {
+    return <></>
+  }
+ 
 };
