@@ -78,6 +78,9 @@ export const DetailBook = () => {
       <button className="singledetail__print" onClick={window.print}>
         Vytisknout
       </button>
+      <button className="back">
+        Zpět
+      </button>
       {/* <h2>{film.jmeno}</h2>
       <p>{film.obrazek}</p>
       <img src={film.obrazek} alt="" />

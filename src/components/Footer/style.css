@@ -20,3 +20,29 @@ footer {
 footer p {
   margin: 2em;
 }
+
+@media (max-width: 480px) {
+  
+  
+}
+
+@media (min-width: 481px) {
+  
+
+}
+
+@media (min-width: 769px) {
+ 
+
+
+}
+
+@media (min-width: 1025px) {
+
+  
+
+
+
+
+}
+

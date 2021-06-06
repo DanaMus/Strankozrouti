@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import './style.css';
 import { useFormik } from 'formik';
 import * as yup from 'yup';
@@ -57,7 +58,7 @@ const DetailForm = () => {
     newwin.print();
     newwin.close();
   }; */
-
+  
   const genres = [
     'beletrie',
     'sci-fi',
