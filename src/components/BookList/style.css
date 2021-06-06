@@ -1,12 +1,33 @@
-.booktest {
-  padding: 20px;
-  background-color: blue;
-  width: 100px;
-  height: 100px;
+.booklist__container {
+  
+  margin: 0;
+  padding: 0;
+  
+  
+  
+}
+.booklist {
+  
+  margin: 30px;
+  list-style-type: none;
+  display: inline-block;
+
+}
+
+.book:hover{
+ background-color: thistle;
+  
+}
+
+.booklist a{
+  text-decoration: none;
+  color: black; 
+  
 }
 
 .book {
-  width: 100px;
-  height: 100px;
-  background-color: blue;
+  padding: 20px;
+  border:5px solid thistle;
+  background-color: wheat;
 }
+

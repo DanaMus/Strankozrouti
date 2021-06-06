@@ -18,17 +18,18 @@ export const BookList = () => {
     return uklid;
   }, []);
   return (
-    <ul>
+    
+    <div className="booklist__container">
+      
       {books.map((book) => (
-        <div key={book.id} className="booktest">
-          <li key={book.id}>
-            <Link className="book" to={`/prectene/${book.id}`}>
-              {book.bookName}
-            </Link>
-          </li>
+        <div key={book.id} className="booklist">
+        <a key={book.id}>
+          <Link  className="book" to={`/prectene/${book.id}`}>{book.bookName}</Link>
+          </a>
         </div>
       ))}
-    </ul>
+      
+      </div>
   );
 };
 
