@@ -5,9 +5,20 @@
 }
 
 .toread__text {
-  padding: 100px;
+  padding: 20px;
 }
 
 .toread__add {
   cursor: pointer;
+}
+
+.toread__form {
+  margin: 100px auto;
+  margin-top: 0;
+}
+
+@media screen and (min-width: 700px) {
+  .toread__text {
+    padding: 20px 100px 20px 100px;
+  }
 }

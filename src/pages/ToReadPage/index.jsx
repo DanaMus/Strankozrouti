@@ -59,12 +59,12 @@ const ToReadPage = () => {
           ></TextField>
           <Button
             className="toread__add"
-            size="large"
+            size="medium"
             variant="contained"
             color="secondary"
             type="submit"
           >
-            Přidat knížku
+            Přidat
           </Button>
         </form>
         <div className="toread__books">
