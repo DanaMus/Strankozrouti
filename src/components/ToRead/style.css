@@ -1,12 +1,13 @@
 .toread__check--checked {
-  background-color: greenyellow;
+  background-color: rgb(60, 189, 77);
   background-image: url('../../assets/iconmonstr-check-mark-1-240.png');
   background-size: contain;
   background-repeat: no-repeat;
 }
 
 .toread__check:hover {
-  background-color: greenyellow;
+  background-color: rgb(60, 189, 77);
+  cursor: pointer;
 }
 
 .delete {
@@ -15,25 +16,32 @@
   background-repeat: no-repeat;
   width: 45px;
   height: 45px;
+  margin-right: 10px;
 }
 
 .delete:hover {
   background-color: red;
+  cursor: pointer;
 }
 
 .toread__check {
-  margin-right: 20px;
+  margin-right: 10px;
   width: 45px;
   height: 45px;
-  border-right: 1px solid black;
-  border-bottom: 1px solid black;
+  border: 1px solid black;
 }
 
 .toread__box {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   border: 1px solid black;
   margin-right: 40px;
+  height: 8em;
+}
+
+.toread__box:hover {
+  background-color: rgb(250, 221, 241);
 }
 
 .toread__box li {
@@ -41,6 +49,12 @@
   padding: 0.8em;
 }
 
-.toread__box1 {
+.toread__box2 {
   display: flex;
+}
+
+@media screen and (min-width: 700px) {
+  .toread__box {
+    height: 4em;
+  }
 }

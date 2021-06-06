@@ -25,7 +25,11 @@ export const DetailBook = () => {
       <p>Počet stránek: {bookDetail.pages}</p>
       <p>Hodnocení: {bookDetail.rating}</p>
       <p>Žánr: {bookDetail.genre}</p>
-      <p>Hlavní postavy: {bookDetail.characters}</p>
+      {/* {
+        (bookDetail.characters = '' ? null : (
+          <p>Hlavní postavy: {bookDetail.characters}</p>
+        ))
+      } */}
       <p>Obsah: {bookDetail.content}</p>
       <p>Motto: {bookDetail.motto}</p>
       <p>Doporučení: {bookDetail.recommendation}</p>

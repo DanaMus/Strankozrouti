@@ -23,6 +23,9 @@ const ToRead = () => {
       {toRead.map((book) => (
         <div className="toread__box" key={book.id}>
           <div className="toread__box1">
+            <li key={book.id}>{book.toRead} </li>
+          </div>
+          <div className="toread__box2">
             <div
               id={book.id}
               className={
@@ -36,9 +39,6 @@ const ToRead = () => {
                   .update({ checked: !book.checked });
               }}
             ></div>
-            <li key={book.id}>{book.toRead} </li>
-          </div>
-          <div className="toread__box2">
             <button
               className="delete"
               onClick={() => {
