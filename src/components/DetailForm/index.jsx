@@ -73,7 +73,11 @@ const DetailForm = () => {
 
   return (
     <div className="container">
-      <form onSubmit={formik.handleSubmit} onReset={formik.handleReset}>
+      <form
+        className="form__container"
+        onSubmit={formik.handleSubmit}
+        onReset={formik.handleReset}
+      >
         <img
           src="../../assets/logo.svg"
           alt="logo Stránkožroutů"
@@ -178,7 +182,7 @@ const DetailForm = () => {
             shrink: true,
           }}
         />
-        <div className="short__button">
+        <div className="form__button--short">
           <Button
             type="submit"
             size="large"
@@ -207,8 +211,8 @@ const DetailForm = () => {
           label="Hlavní postavy a jejich vlastnosti"
           margin="normal"
           multiline
-          rows={3}
-          rowsMax={20}
+          rows={1}
+          rowsMax={100}
           value={formik.values.characters}
           onChange={formik.handleChange}
         />
@@ -218,19 +222,19 @@ const DetailForm = () => {
           label="Zajímavá myšlenka, citát"
           margin="normal"
           multiline
-          rows={3}
-          rowsMax={30}
+          rows={1}
+          rowsMax={100}
           value={formik.values.motto}
           onChange={formik.handleChange}
         />
         <TextField
           id="recommendation"
           name="recommendation"
-          label="Proč bych knihu doporučil (nebo nedoporučil) kamarádovi"
+          label="Doporučení kamarádovi"
           margin="normal"
           multiline
-          rows={3}
-          rowsMax={30}
+          rows={1}
+          rowsMax={100}
           value={formik.values.recommendation}
           onChange={formik.handleChange}
         />
@@ -240,44 +244,48 @@ const DetailForm = () => {
           label="Ostatní"
           margin="normal"
           multiline
-          rows={3}
+          rows={1}
           rowsMax={100}
           value={formik.values.optional}
           onChange={formik.handleChange}
         />
-        <ButtonGroup
+        {/* <ButtonGroup
           className="buttongroup"
           color="primary"
           margin="normal"
           style={{ marginTop: '50px' }}
           aria-label="outlined primary button group"
-        >
+        > */}
+        <div className="form__button--full">
           <Button
             size="large"
             variant="contained"
             color="secondary"
             type="submit"
           >
-            Uložit
+            Uložit záznam
           </Button>
-          <Button size="large" variant="contained" color="primary" type="reset">
+        </div>
+        <div className="form__button--delete">
+          <Button size="large" variant="outlined" color="primary" type="reset">
             Smazat
           </Button>
-          {/* <Button
+        </div>
+        {/* <Button
             onClick={
               window.print */}
-          {/* } /* {myPrint} */
-          /* {printJS('docs/printjs.pdf')} */
-          /* {printJS({
+        {/* } /* {myPrint} */
+        /* {printJS('docs/printjs.pdf')} */
+        /* {printJS({
               printable: 'printJS-form',
               type: 'html',
               scanStyles: true,
               css: 'style.css',
             })} */}
-          {/* >
+        {/* >
             Vytisknout
           </Button> */}
-        </ButtonGroup>
+        {/*    </ButtonGroup> */}
       </form>
     </div>
   );
