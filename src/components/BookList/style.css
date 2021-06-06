@@ -1,32 +1,41 @@
 .booklist__container {
-  
   margin: 0;
   padding: 0;
-  
-  
-  
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
 }
-.booklist{
-  margin: 30px;
+.booklist {
+  background-image: url('../../assets/kniha.svg');
+  background-size: contain;
+  margin: 15px;
   list-style-type: none;
-  display: inline-block;
-
+  /* display: inline-block; */
+  width: 250px;
+  height: 400px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 
-.book:hover{
- background-color: thistle;
-  
+.book:hover {
+  background-color: thistle;
 }
 
-.booklist a{
+.booklist a {
   text-decoration: none;
-  color: black; 
-  
+  color: black;
+  padding: 100px 20px 100px 20px;
+  width: 100%;
+}
+
+.booklist p {
+  word-break: break-all;
 }
 
 .book {
   padding: 20px;
-  border:5px solid thistle;
-  background-color: wheat;
+  /* border: 5px solid thistle;
+  background-color: wheat; */
 }
-

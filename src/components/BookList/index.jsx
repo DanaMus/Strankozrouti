@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { db } from '../../db';
 import { Link } from 'react-router-dom';
+import './style.css';
 
 export const BookList = () => {
   const [books, setBooks] = useState([]);
@@ -17,19 +18,18 @@ export const BookList = () => {
     });
     return uklid;
   }, []);
- return (
-    
+  return (
     <div className="booklist__container">
-      
       {books.map((book) => (
         <div key={book.id} className="booklist">
-        <p key={book.id}>
-          <Link  className="book" to={`/prectene/${book.id}`}>{book.bookName}</Link>
+          <p key={book.id}>
+            <Link className="book" to={`/prectene/${book.id}`}>
+              {book.bookName}
+            </Link>
           </p>
         </div>
       ))}
-      
-      </div>
+    </div>
   );
 };
 
