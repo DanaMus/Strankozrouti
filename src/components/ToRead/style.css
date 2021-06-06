@@ -1,3 +1,22 @@
-.toread--checked {
+.toread__check--checked {
   background-color: green;
+}
+
+.toread__check {
+  margin-right: 20px;
+}
+
+.toread__box {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid black;
+}
+
+.toread__box li {
+  list-style: none;
+  padding: 0.8em;
+}
+
+.toread__box1 {
+  display: flex;
 }
