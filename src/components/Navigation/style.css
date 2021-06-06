@@ -1,8 +1,14 @@
+/* @font-face {
+  font-family: ;
+  src: url();
+} */
+
+
 .menu {
   display: flex;
-  flex-direction: column;
-  /* align-items: flex-end;
-  justify-content: space-between; */
+  /* flex-direction: column; */
+  /* align-items: flex-end; */
+  justify-content: space-between;
   background-color: white;
   /* margin: -10px -10px; */
   position: relative;
@@ -14,6 +20,7 @@
   right: 0;
   display: flex;
   flex-direction: column;
+  
   
   margin: 2em;
   
@@ -37,6 +44,11 @@
   width: 200px;
   height: 70px;
   margin: 20px;
+  
+}
+
+.menu__burger {
+  order: 5;
 }
 
 .btn_login {
@@ -72,7 +84,7 @@
     display: none;
   }
   .menu {
-    display: flex;
+    /* display: flex; */
     flex-direction: row;
     align-items: flex-end;
     justify-content: space-between;

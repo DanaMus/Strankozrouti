@@ -53,7 +53,7 @@ const AboutPage = () => {
             <div className="about__imagecontainer">
               <img
                 className="about__image"
-                /* src="./img/IMG_4963.jpg" */
+                src='assets/dana.jpg'
                 alt="Foto Dana"
               />
             </div>
@@ -71,7 +71,7 @@ const AboutPage = () => {
           <div className="about__author">
             <img
               className="about__image"
-              /* src="./img/petra.jpg"  */ alt="Foto Petra"
+              src='assets/petra.jpg'  alt="Foto Petra"
             />
             <h2>Petra Kejmarová</h2>
             <p>

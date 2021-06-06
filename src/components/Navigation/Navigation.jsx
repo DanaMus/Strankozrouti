@@ -17,6 +17,7 @@ export const Navigation = () => {
         </Link>
        
       <div className={open ? "menu__items" : "menu__items menu__items--closed"} >
+      
         <Link to="/" className="menu__item">
           Domů
         </Link>
@@ -33,12 +34,15 @@ export const Navigation = () => {
           Plánovaná četba
         </Link>
       </div>
-      <button className="btn_login">Přihlásit se</button>
+
       <div className="menu__burger">
         <HamburgerMenu
           open={open}
           naKliknutiNaTlacitko={handleClickHamburgerMenu}
         />
+      </div>
+      <div className="login">
+      <button className="btn_login">Přihlásit se</button>
       </div>
     </div>
   );
