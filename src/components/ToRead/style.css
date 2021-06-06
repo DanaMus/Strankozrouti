@@ -1,9 +1,32 @@
 .toread__check--checked {
-  background-color: green;
+  background-color: greenyellow;
+  background-image: url('../../assets/iconmonstr-check-mark-1-240.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.toread__check:hover {
+  background-color: greenyellow;
+}
+
+.delete {
+  background-image: url('../../assets/iconmonstr-x-mark-1-240.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 45px;
+  height: 45px;
+}
+
+.delete:hover {
+  background-color: red;
 }
 
 .toread__check {
   margin-right: 20px;
+  width: 45px;
+  height: 45px;
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
 }
 
 .toread__box {

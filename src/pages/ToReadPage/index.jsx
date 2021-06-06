@@ -33,8 +33,9 @@ const ToReadPage = () => {
           </p>
           <p>
             Sem si můžeš zapsat knihy, které se chystáš číst. Po jejich přečtení
-            si můžeš knihu v seznamu odškrtnout. Ještě lepší bude, když si ji
-            rovnou zapíšeš do deníčku a nakrmíš tak Stránkožrouty.
+            si můžeš knihu v seznamu v levém sloupečku odškrtnout. Ještě lepší
+            bude, když si ji rovnou zapíšeš do deníčku a nakrmíš tak
+            Stránkožrouty.
           </p>
           <p>
             Nakoukni do seznamu před návštěvou knihovny nebo třeba když se tě

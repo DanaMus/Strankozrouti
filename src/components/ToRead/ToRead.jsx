@@ -23,7 +23,7 @@ const ToRead = () => {
       {toRead.map((book) => (
         <div className="toread__box" key={book.id}>
           <div className="toread__box1">
-            <button
+            <div
               id={book.id}
               className={
                 book.checked
@@ -35,9 +35,7 @@ const ToRead = () => {
                   .doc(book.id)
                   .update({ checked: !book.checked });
               }}
-            >
-              Splněno
-            </button>
+            ></div>
             <li key={book.id}>{book.toRead} </li>
           </div>
           <div className="toread__box2">
@@ -51,9 +49,7 @@ const ToRead = () => {
                     : null;
                 }
               }}
-            >
-              Smazat
-            </button>
+            ></button>
           </div>
         </div>
       ))}
