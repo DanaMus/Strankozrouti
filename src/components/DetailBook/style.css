@@ -18,8 +18,26 @@
   font-weight: bold;
 }
 
+.singledetail__print {
+  margin-top: 30px;
+}
+
 @media screen and (min-width: 768px) {
   .book__container {
     padding: 100px;
+    padding-top: 20px;
+  }
+  .singledetail__container {
+    display: flex;
+  }
+  .singledetail__name {
+    width: 30%;
+    margin-right: 20px;
+  }
+  .singledetail__item {
+    width: 65%;
+  }
+  .singledetail__print {
+    margin-top: 80px;
   }
 }

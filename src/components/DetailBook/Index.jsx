@@ -75,7 +75,9 @@ export const DetailBook = () => {
           <div className="singledetail__item">{bookDetail.optional}</div>
         </div>
       ) : null}
-      <button onClick={window.print}>Vytisknout</button>
+      <button className="singledetail__print" onClick={window.print}>
+        Vytisknout
+      </button>
       {/* <h2>{film.jmeno}</h2>
       <p>{film.obrazek}</p>
       <img src={film.obrazek} alt="" />
