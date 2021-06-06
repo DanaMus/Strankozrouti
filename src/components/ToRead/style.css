@@ -3,6 +3,8 @@
   background-image: url('../../assets/iconmonstr-check-mark-1-240.png');
   background-size: contain;
   background-repeat: no-repeat;
+  background-size: 50%;
+  background-position: center;
 }
 
 .toread__check:hover {
@@ -14,9 +16,12 @@
   background-image: url('../../assets/iconmonstr-x-mark-1-240.png');
   background-size: contain;
   background-repeat: no-repeat;
+  background-size: 50%;
+  background-position: center;
   width: 45px;
   height: 45px;
   margin-right: 10px;
+  border-radius: 5px;
 }
 
 .delete:hover {
@@ -29,6 +34,7 @@
   width: 45px;
   height: 45px;
   border: 1px solid black;
+  border-radius: 5px;
 }
 
 .toread__box {
