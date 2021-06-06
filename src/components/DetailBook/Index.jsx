@@ -23,17 +23,19 @@ export const DetailBook = () => {
       <h3>Název: {bookDetail.bookName}</h3>
       <p>Date: {bookDetail.date}</p>
       <p>Počet stránek: {bookDetail.pages}</p>
-      <p>Hodnocení: {bookDetail.rating}</p>
-      <p>Žánr: {bookDetail.genre}</p>
-      {/* {
-        (bookDetail.characters = '' ? null : (
-          <p>Hlavní postavy: {bookDetail.characters}</p>
-        ))
-      } */}
-      <p>Obsah: {bookDetail.content}</p>
-      <p>Motto: {bookDetail.motto}</p>
-      <p>Doporučení: {bookDetail.recommendation}</p>
-      <p>Ostatní: {bookDetail.optional}</p>
+      {bookDetail.rating ? <p>Hodnocení: {bookDetail.rating}</p> : null}
+      {bookDetail.genre ? <p>Citát, myšlenka: {bookDetail.genre}</p> : null}
+      {bookDetail.characters ? (
+        <p>Hlavní postavy: {bookDetail.characters}</p>
+      ) : null}
+      {bookDetail.content ? <p>Obsah: {bookDetail.content}</p> : null}
+      {bookDetail.motto ? <p>Citát, myšlenka: {bookDetail.motto}</p> : null}
+      {bookDetail.recommendation ? (
+        <p>Doporučení kamarádovi: {bookDetail.recommendation}</p>
+      ) : null}
+      {bookDetail.optional ? (
+        <p>Ostatní poznámky: {bookDetail.optional}</p>
+      ) : null}
       <button onClick={window.print}>Vytisknout</button>
       {/* <h2>{film.jmeno}</h2>
       <p>{film.obrazek}</p>
