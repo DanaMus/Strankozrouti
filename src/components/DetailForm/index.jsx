@@ -249,13 +249,6 @@ const DetailForm = () => {
           value={formik.values.optional}
           onChange={formik.handleChange}
         />
-        {/* <ButtonGroup
-          className="buttongroup"
-          color="primary"
-          margin="normal"
-          style={{ marginTop: '50px' }}
-          aria-label="outlined primary button group"
-        > */}
         <div className="form__button--full">
           <Button
             size="large"
