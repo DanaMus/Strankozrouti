@@ -15,11 +15,12 @@ const ToReadPage = () => {
     initialValues: {
       toread: '',
     },
-    onSubmit: (values) =>
+    onSubmit: (values, { resetForm }) => {
       db.collection('ToRead').add({
         toRead: values.toread,
-      }),
-
+      });
+      resetForm();
+    },
     /* console.log(JSON.stringify(values)), */
     validationSchema: validationSchema,
   });
