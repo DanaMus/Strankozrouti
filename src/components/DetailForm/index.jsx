@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useHistory } from 'react-router-dom';
 import './style.css';
 import { useFormik } from 'formik';
 import * as yup from 'yup';
@@ -19,6 +19,7 @@ const validationSchema = yup.object({
 });
 
 const DetailForm = () => {
+  let history = useHistory();
   const formik = useFormik({
     initialValues: {
       bookName: '',
@@ -33,7 +34,7 @@ const DetailForm = () => {
       recommendation: '',
       optional: '',
     },
-    onSubmit: (values) =>
+    onSubmit: (values) => {
       db.collection('BookList').add({
         bookName: values.bookName,
         authorName: values.authorName,
@@ -46,7 +47,10 @@ const DetailForm = () => {
         motto: values.motto,
         recommendation: values.recommendation,
         optional: values.optional,
-      }),
+      });
+      /* console.log(values); */
+      history.push('/prectene');
+    },
     /* date: firebase.firestore.FieldValue.serverTimestamp() */
     /* console.log(JSON.stringify(values)), */
     validationSchema: validationSchema,
@@ -58,7 +62,7 @@ const DetailForm = () => {
     newwin.print();
     newwin.close();
   }; */
-  
+
   const genres = [
     'beletrie',
     'sci-fi',
