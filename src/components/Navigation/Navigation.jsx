@@ -50,9 +50,7 @@ if (!location.pathname.match(regex)) {return (
       </div>
     </div>
   )} else {
-    return <><Link to="/prectene" className="menu__item">
-    Zpět na přečtené knihy
-  </Link></>
+    return <></>
   }
  
 };
