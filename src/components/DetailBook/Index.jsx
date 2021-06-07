@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { db } from '../../db';
 import './style.css';
+import ReactToPrint from 'react-to-print';
 
 export const DetailBook = () => {
   const { id } = useParams();
@@ -78,9 +79,7 @@ export const DetailBook = () => {
       <button className="singledetail__print" onClick={window.print}>
         Vytisknout
       </button>
-      <button className="back">
-        Zpět
-      </button>
+      <button className="back">Zpět</button>
       {/* <h2>{film.jmeno}</h2>
       <p>{film.obrazek}</p>
       <img src={film.obrazek} alt="" />
