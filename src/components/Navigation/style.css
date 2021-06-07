@@ -87,7 +87,7 @@
   15% {
     transform: rotateZ(-15deg);
   }
-  20% {
+  /* 20% {
     transform: rotateZ(10deg);
   }
   25% {
@@ -101,10 +101,10 @@
   }
   40%, 100% {
     transform: rotateZ(0);
-  }
+  } */
 }
 
-#about:hover, #home:hover, #book:hover, #read:hover, #toread:hover {
+#about:hover, #home:hover, #book:hover, #read:hover, #plantoread:hover {
 
   animation: wiggle 2s linear infinite;
 }

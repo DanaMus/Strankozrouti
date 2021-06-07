@@ -31,7 +31,7 @@ if (!location.pathname.match(regex)) {return (
         <Link to="/prectene" id="read" className="menu__item">
           Přečtené knihy
         </Link>
-        <Link to="/kprecteni" id="toread" className="menu__item">
+        <Link to="/kprecteni" id="plantoread" className="menu__item">
           Plánovaná četba
         </Link>
         <Link to="/oprojektu" id="about" className="menu__item">
