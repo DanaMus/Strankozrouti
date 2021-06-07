@@ -16,7 +16,7 @@
 }
 
 .hero--monster {
-  max-width: 80%;
+  max-width: 90%;
 }
 
 
@@ -27,7 +27,7 @@
  }
 
 h1 {
-font-size: 1em;
+font-size: 1.3em;
 font-family: 'Bangers';
 font-weight: 400;
 
@@ -39,11 +39,12 @@ font-weight: 400;
   padding: 20px;
   background-color: rgb(43, 43, 133);
   color: white;
-  font-family:'Bangers';
-  
+  font-family:'Roboto';
+  text-transform: uppercase;
   font-weight: 400;
-  font-size: 1em;
+  font-size: 0.7em;
   border-radius: 5px;
+  border: none;
 }
 
 .zapsat:hover {

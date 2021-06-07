@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { db } from '../../db';
 import './style.css';
 import ReactToPrint from 'react-to-print';
@@ -76,10 +77,15 @@ export const DetailBook = () => {
           <div className="singledetail__item">{bookDetail.optional}</div>
         </div>
       ) : null}
+      
       <button className="singledetail__print" onClick={window.print}>
         Vytisknout
       </button>
+
+      <Link to="/prectene">
       <button className="back">Zpět</button>
+        </Link>
+      
       {/* <h2>{film.jmeno}</h2>
       <p>{film.obrazek}</p>
       <img src={film.obrazek} alt="" />
