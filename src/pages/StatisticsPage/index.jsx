@@ -8,11 +8,13 @@ const StatisticsPage = () => {
   const [pagesCountLastMonth, setPagesCountLastMonth] = useState([]);
   const [booksCountLastMonth, setBooksCountLastMonth] = useState([]);
   const [favouriteBooks, setFavouriteBooks] = useState([]);
+  const [favouriteGenre, setFavouriteGenre] = useState([]);
   let localbooksCounter = 0;
   let localPagesCounter = 0;
   let localPagesLastMonthCounter = 0;
   let localBooksLastMonthCounter = 0;
   let now = new Date();
+
   useEffect(() => {
     const uklid = db.collection('BookList').onSnapshot((snapshot) => {
       snapshot.forEach((doc) => {
@@ -45,11 +47,11 @@ const StatisticsPage = () => {
       <p>Počet snědených stran za posledních 30 dní: {pagesCountLastMonth}</p>
       <p>Počet snědených knih celkem: {booksCount}</p>
       <p>Počet snědených knih za posledních 30 dní: {booksCountLastMonth}</p>
-      <p>Nejoblíbenější knihy - třeba 5</p>
+      {/* <p>Nejoblíbenější knihy - třeba 5</p>
       <p>Nejčtenější žánr</p>
       <p>Nejčtenější autor</p>
       <p>Před rokem jsi četl</p>
-      <p>Naplánovaná četba</p>
+      <p>Naplánovaná četba</p> */}
     </div>
   );
 };

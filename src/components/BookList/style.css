@@ -4,19 +4,22 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  font-size: 1.3em;
 }
 .booklist {
   background-image: url('../../assets/kniha.svg');
   background-size: contain;
+  background-repeat: no-repeat;
   margin: 15px;
   list-style-type: none;
   /* display: inline-block; */
-  width: 250px;
-  height: 400px;
+  width: 200px;
+  height: 300px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 
 .book:hover {
@@ -26,16 +29,23 @@
 .booklist a {
   text-decoration: none;
   color: black;
-  padding: 100px 20px 100px 20px;
-  width: 100%;
+  /* padding: 20px; */
+  min-height: 35%;
+  text-align: center;
+  padding: 10px;
+  background-color: rgb(250, 221, 241);
+  border-radius: 10%;
+  width: 84%;
+  position: absolute;
+  left: 11px;
 }
 
-.booklist p {
+/* .booklist p {
   word-break: break-all;
 }
-
+ */
 .book {
-  padding: 20px;
+  /* padding: 20px; */
   /* border: 5px solid thistle;
   background-color: wheat; */
 }

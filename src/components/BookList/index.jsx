@@ -22,11 +22,11 @@ export const BookList = () => {
     <div className="booklist__container">
       {books.map((book) => (
         <div key={book.id} className="booklist">
-          <p key={book.id}>
-            <Link className="book" to={`/prectene/${book.id}`}>
-              {book.bookName}
-            </Link>
-          </p>
+          {/* <p key={book.id}> */}
+          <Link className="book" to={`/prectene/${book.id}`}>
+            {book.bookName}
+          </Link>
+          {/*  </p> */}
         </div>
       ))}
     </div>
