@@ -4,3 +4,74 @@
   min-width: 300px;
   line-height: 2;
 }
+
+.statistics__flex {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.statistics__pagescount, .statistics__bookscount {
+  width: 50%;
+}
+
+.statistics__motto {
+  width: 100%;
+}
+
+.statistics__pagescount p, .statistics__bookscount p {
+  background-image: url('../../assets/prazdnabublina.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 200px;
+  height: 150px;
+  padding: 10px;
+}
+
+
+
+.statistics__motto {
+display:flex;
+}
+
+.statistics__motto h4 { 
+  width: 50%;
+  }
+
+  .purple, .magenta {
+    animation: Move 3s linear infinite;
+    animation-delay: 1s;
+  }
+
+  .purple {
+    animation: Move 3s linear infinite;
+  }
+
+  .violet {
+    animation: MoveUpDown 2s linear infinite;
+  }
+
+  .blue {
+    animation: MoveUpDown 2s linear infinite;
+    animation-delay: 1s;
+  }
+
+  @keyframes MoveUpDown {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-100px);
+    }
+  }
+
+  @keyframes Move {
+    0%, 100% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(50px);
+    }
+  }
+

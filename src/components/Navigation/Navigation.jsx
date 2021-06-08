@@ -56,9 +56,7 @@ export const Navigation = () => {
   } else {
     return (
       <>
-        <Link to="/prectene" className="menu__item">
-          Zpět na přečtené knihy
-        </Link>
+        
       </>
     );
   }

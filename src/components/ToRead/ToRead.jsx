@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 import { db } from '../../db';
 import './style.css';
 
@@ -37,6 +38,7 @@ const ToRead = () => {
                 db.collection('ToRead')
                   .doc(book.id)
                   .update({ checked: !book.checked });
+                  
               }}
             ></div>
             <button

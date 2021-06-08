@@ -61,19 +61,36 @@ const StatisticsPage = () => {
 
   return (
     <div className="statistics__container">
-      <p>Přečetl jsi další knížku? Stránkožrout ji chce mít v bříšku!</p>
-      <p>Počet snědených stran celkem: {pagesCount}</p>
-      <p>Počet snědených stran za posledních 30 dní: {pagesCountLastMonth}</p>
-      <p>Počet snědených knih celkem: {booksCount}</p>
-      <p>Počet snědených knih za posledních 30 dní: {booksCountLastMonth}</p>
-      <p>
+    <p>Přečetl jsi další knížku? Stránkožrout ji chce mít v bříšku!</p>
+    <div className="statistics__flex">
+    <div className="statistics__pagescount">
+    <p>Počet snědených stran celkem: {pagesCount}</p>
+    <img className="violet" src="../../assets/violet.svg" alt="monster"></img>
+    </div>
+    <div className="statistics__pagescount">
+    <p>Počet snědených stran za posledních 30 dní: {pagesCountLastMonth}</p>
+    <img className="purple" src="../../assets/purple.svg" alt="monster"></img>
+    </div>
+    <div className="statistics__bookscount">
+    <p>Počet snědených knih celkem: {booksCount}</p>
+    <img className="magenta" src="../../assets/magenta.svg" alt="monster"></img>
+    </div>
+    <div className="statistics__bookscount">
+    <p>Počet snědených knih za posledních 30 dní: {booksCountLastMonth}</p>
+    <img className="blue" src="../../assets/blue.svg" alt="monster"></img>
+    </div>
+    <div className="statistics__motto">
+      <h4>
         Náhodný citát: {randomMotto} (z knihy {randomMottoBook})
-      </p>
+      </h4>
+      <img className="green" src="../../assets/green.svg" alt="monster"></img>
+      </div>
       {/* <p>Nejoblíbenější knihy - třeba 5</p>
       <p>Nejčtenější žánr</p>
       <p>Nejčtenější autor</p>
       <p>Před rokem jsi četl</p>
       <p>Naplánovaná četba</p> */}
+      </div>
     </div>
   );
 };

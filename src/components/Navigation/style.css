@@ -104,7 +104,7 @@
   } */
 }
 
-#about:hover, #home:hover, #book:hover, #read:hover, #plantoread:hover {
+#about:hover, #home:hover, #book:hover, #read:hover, #plantoread:hover,#statistics:hover {
 
   animation: wiggle 2s linear infinite;
 }
