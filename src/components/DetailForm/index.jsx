@@ -65,13 +65,14 @@ const DetailForm = () => {
 
   const genres = [
     'beletrie',
+    'pohádky',
+    'fantasy',
     'sci-fi',
     'komiks',
     'humor',
     'dobrodružné',
     'vzdělávací',
     'poezie',
-    'fantasy',
   ];
 
   const rating = ['😞', '😏', '😐', '😊', '🤩'];
