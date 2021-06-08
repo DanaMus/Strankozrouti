@@ -7,15 +7,18 @@ export const BookList = () => {
   const [books, setBooks] = useState([]);
 
   useEffect(() => {
-    const uklid = db.collection('BookList').onSnapshot((snapshot) => {
-      setBooks(
-        snapshot.docs.map((doc) => {
-          const data = doc.data();
-          data.id = doc.id;
-          return data;
-        }),
-      );
-    });
+    const uklid = db
+      .collection('BookList')
+      .orderBy('date', 'desc')
+      .onSnapshot((snapshot) => {
+        setBooks(
+          snapshot.docs.map((doc) => {
+            const data = doc.data();
+            data.id = doc.id;
+            return data;
+          }),
+        );
+      });
     return uklid;
   }, []);
   return (

@@ -12,7 +12,6 @@
   background-repeat: no-repeat;
   margin: 15px;
   list-style-type: none;
-  /* display: inline-block; */
   width: 200px;
   height: 300px;
   display: flex;
@@ -29,7 +28,6 @@
 .booklist a {
   text-decoration: none;
   color: black;
-  /* padding: 20px; */
   min-height: 35%;
   text-align: center;
   padding: 10px;
@@ -38,14 +36,4 @@
   width: 84%;
   position: absolute;
   left: 11px;
-}
-
-/* .booklist p {
-  word-break: break-all;
-}
- */
-.book {
-  /* padding: 20px; */
-  /* border: 5px solid thistle;
-  background-color: wheat; */
 }
