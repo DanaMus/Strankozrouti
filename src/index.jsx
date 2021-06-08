@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react';
+import React, { useEffect } from 'react';
 import { render } from 'react-dom';
 import './style.css';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
@@ -11,11 +11,10 @@ import { Footer } from './components/Footer/Footer';
 import BookListPage from './pages/BookListPage';
 import ToReadPage from './pages/ToReadPage';
 import AboutPage from './pages/AboutPage';
+import StatisticsPage from './pages/StatisticsPage';
 import DetailBook from './components/DetailBook';
 
 const App = () => {
-  
-
   return (
     <Router>
       <Navigation />
@@ -37,6 +36,9 @@ const App = () => {
         </Route>
         <Route path="/oprojektu" exact>
           <AboutPage />
+        </Route>
+        <Route path="/statistika" exact>
+          <StatisticsPage />
         </Route>
         <Route path="/" exact></Route>
       </Switch>
