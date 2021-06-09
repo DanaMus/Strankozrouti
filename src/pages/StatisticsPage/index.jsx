@@ -106,7 +106,7 @@ const StatisticsPage = () => {
         </div>
         <div className="statistics__motto">
           <h4>
-            Náhodný citát: {randomMotto} (z knihy {randomMottoBook})
+            Náhodný citát: {randomMotto}<br/>(z knihy {randomMottoBook})
           </h4>
           <img
             className="green"
@@ -115,7 +115,7 @@ const StatisticsPage = () => {
           ></img>
         </div>
         <div>
-          <h3>Nezapomeň na:</h3>
+          <h5>Nezapomeň na:</h5>
           <p>{randomTodo}</p>
         </div>
         {/* <p>Nejoblíbenější knihy - třeba 5</p>

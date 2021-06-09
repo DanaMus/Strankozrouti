@@ -161,9 +161,9 @@
     margin: 0.05em;
   }
 
-  /* .menu {
+  .menu {
     justify-content: space-between;
-  } */
+  }
 
   .login {
     margin-right:50px;

@@ -1,20 +1,22 @@
 .statistics__container {
   background-color: white;
-  padding: 50px;
-  min-width: 300px;
+  width: 90%;
   line-height: 2;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+  margin-top:40px;
+  margin-bottom:40px;
 }
 
 .statistics__flex {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  justify-content: center;
+  padding: 50px;
 }
 
-.statistics__pagescount, .statistics__bookscount {
-  width: 50%;
-}
+
 
 .statistics__motto {
   width: 100%;
@@ -27,6 +29,7 @@
   width: 200px;
   height: 150px;
   padding: 10px;
+  text-align: center;
 }
 
 
@@ -44,9 +47,6 @@ display:flex;
     animation-delay: 1s;
   }
 
-  .purple {
-    animation: Move 3s linear infinite;
-  }
 
   .violet {
     animation: MoveUpDown 2s linear infinite;
