@@ -42,7 +42,11 @@
   }
 }
 
-@media print and (min-width: 320px) {
+@media print {
+  @page {
+    margin: 0;
+  }
+
   .book__container {
     background-color: white;
     padding: 120px;
