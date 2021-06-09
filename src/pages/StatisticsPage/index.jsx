@@ -11,6 +11,7 @@ const StatisticsPage = () => {
   const [favouriteGenre, setFavouriteGenre] = useState([]);
   const [randomMotto, setRandomMotto] = useState([]);
   const [randomMottoBook, setRandomMottoBook] = useState([]);
+  const [randomTodo, setRandomTodo] = useState([]);
   let localbooksCounter = 0;
   let localPagesCounter = 0;
   let localPagesLastMonthCounter = 0;
@@ -19,73 +20,105 @@ const StatisticsPage = () => {
   let randommottoid = -1;
 
   useEffect(() => {
-    const uklid = db.collection('BookList').onSnapshot((snapshot) => {
+    const dbConnect1 = db.collection('BookList').onSnapshot((snapshot) => {
       let arrayData;
       arrayData = snapshot.docs.map((doc) => doc.data());
 
-      snapshot.forEach((doc) => {
+      arrayData.forEach((doc) => {
         /* počet stran celkem */
-        localPagesCounter += Number(doc.data().pages);
+        localPagesCounter += Number(doc.pages);
         /* počet stran za 30 dní */
-        if ((now - Date.parse(doc.data().date)) / (1000 * 3600 * 24) <= 30) {
-          localPagesLastMonthCounter += Number(doc.data().pages);
+        if ((now - Date.parse(doc.date)) / (1000 * 3600 * 24) <= 30) {
+          localPagesLastMonthCounter += Number(doc.pages);
           localBooksLastMonthCounter++;
         }
         /* počet knih celkem */
         localbooksCounter++;
         /* počet knih za 30 dní */
-        if (doc.data().motto !== null && doc.data().motto !== '') {
-          randommottoid = 0;
-        }
       });
 
-      while (randommottoid !== -1) {
-        randommottoid = Math.floor(Math.random() * localbooksCounter + 1);
-        if (
-          arrayData[randommottoid].motto !== null &&
-          arrayData[randommottoid].motto !== ''
-        ) {
-          setRandomMottoBook(arrayData[randommottoid].bookName);
-          setRandomMotto(arrayData[randommottoid].motto);
-          break;
-        }
+      let hasMotto = arrayData.filter((h) => h.motto !== '');
+      console.log(hasMotto);
+      if (hasMotto.length > 0) {
+        let randommottoid = Math.floor(Math.random() * hasMotto.length);
+        console.log(randommottoid);
+        setRandomMotto(hasMotto[randommottoid].motto);
+        setRandomMottoBook(hasMotto[randommottoid].bookName);
       }
+
       console.log(arrayData);
       setBooksCount(localbooksCounter);
       setPagesCount(localPagesCounter);
       setPagesCountLastMonth(localPagesLastMonthCounter);
       setBooksCountLastMonth(localBooksLastMonthCounter);
     });
-    return uklid;
+
+    const dbConnect2 = db.collection('ToRead').onSnapshot((snapshot) => {
+      let arrayData;
+      arrayData = snapshot.docs.map((doc) => doc.data());
+
+      let notChecked = arrayData.filter((todo) => !todo.checked);
+      console.log(notChecked);
+      if (notChecked.length > 0) {
+        let randomnotcheckedid = Math.floor(Math.random() * notChecked.length);
+        setRandomTodo(notChecked[randomnotcheckedid].toRead);
+      }
+    });
+
+    return dbConnect1, dbConnect2;
   }, []);
 
   return (
     <div className="statistics__container">
-    <p>Přečetl jsi další knížku? Stránkožrout ji chce mít v bříšku!</p>
-    <div className="statistics__flex">
-    <div className="statistics__pagescount">
-    <p>Počet snědených stran celkem: {pagesCount}</p>
-    <img className="violet" src="../../assets/violet.svg" alt="monster"></img>
-    </div>
-    <div className="statistics__pagescount">
-    <p>Počet snědených stran za posledních 30 dní: {pagesCountLastMonth}</p>
-    <img className="purple" src="../../assets/purple.svg" alt="monster"></img>
-    </div>
-    <div className="statistics__bookscount">
-    <p>Počet snědených knih celkem: {booksCount}</p>
-    <img className="magenta" src="../../assets/magenta.svg" alt="monster"></img>
-    </div>
-    <div className="statistics__bookscount">
-    <p>Počet snědených knih za posledních 30 dní: {booksCountLastMonth}</p>
-    <img className="blue" src="../../assets/blue.svg" alt="monster"></img>
-    </div>
-    <div className="statistics__motto">
-      <h4>
-        Náhodný citát: {randomMotto} (z knihy {randomMottoBook})
-      </h4>
-      <img className="green" src="../../assets/green.svg" alt="monster"></img>
-      </div>
-      {/* <p>Nejoblíbenější knihy - třeba 5</p>
+      <p>Přečetl jsi další knížku? Stránkožrout ji chce mít v bříšku!</p>
+      <div className="statistics__flex">
+        <div className="statistics__pagescount">
+          <p>Počet snědených stran celkem: {pagesCount}</p>
+          <img
+            className="violet"
+            src="../../assets/violet.svg"
+            alt="monster"
+          ></img>
+        </div>
+        <div className="statistics__pagescount">
+          <p>
+            Počet snědených stran za posledních 30 dní: {pagesCountLastMonth}
+          </p>
+          <img
+            className="purple"
+            src="../../assets/purple.svg"
+            alt="monster"
+          ></img>
+        </div>
+        <div className="statistics__bookscount">
+          <p>Počet snědených knih celkem: {booksCount}</p>
+          <img
+            className="magenta"
+            src="../../assets/magenta.svg"
+            alt="monster"
+          ></img>
+        </div>
+        <div className="statistics__bookscount">
+          <p>
+            Počet snědených knih za posledních 30 dní: {booksCountLastMonth}
+          </p>
+          <img className="blue" src="../../assets/blue.svg" alt="monster"></img>
+        </div>
+        <div className="statistics__motto">
+          <h4>
+            Náhodný citát: {randomMotto} (z knihy {randomMottoBook})
+          </h4>
+          <img
+            className="green"
+            src="../../assets/green.svg"
+            alt="monster"
+          ></img>
+        </div>
+        <div>
+          <h3>Nezapomeň na:</h3>
+          <p>{randomTodo}</p>
+        </div>
+        {/* <p>Nejoblíbenější knihy - třeba 5</p>
       <p>Nejčtenější žánr</p>
       <p>Nejčtenější autor</p>
       <p>Před rokem jsi četl</p>
