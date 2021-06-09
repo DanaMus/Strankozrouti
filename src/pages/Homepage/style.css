@@ -30,10 +30,11 @@ h1 {
 font-size: 1.3em;
 font-family: 'Bangers';
 font-weight: 400;
+letter-spacing: 2px;
 
 }
 
-.zapsat {
+.btn__record {
   margin-top: 20px;
   margin-bottom: 50px;
   padding: 20px;
@@ -45,9 +46,10 @@ font-weight: 400;
   font-size: 0.7em;
   border-radius: 5px;
   border: none;
+  text-decoration: none;
 }
 
-.zapsat:hover {
+.btn__record:hover {
   background-color: rgb(202, 41, 148);
   box-shadow:5px 5px 5px rgb(128, 124, 124);
 }

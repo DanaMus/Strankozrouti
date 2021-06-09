@@ -29,13 +29,13 @@ export const Navigation = () => {
             Zapsat knížku
           </Link>
           <Link to="/prectene" id="read" className="menu__item">
-            Přečtené knihy
+            Přečtené
           </Link>
           <Link to="/kprecteni" id="plantoread" className="menu__item">
-            Plánovaná četba
+            Plánované
           </Link>
           <Link to="/statistika" id="statistics" className="menu__item">
-            Statistika
+            Moje
           </Link>
           <Link to="/oprojektu" id="about" className="menu__item">
             O projektu

@@ -1,3 +1,33 @@
+/* .booklist__wrap {
+  background-color: white;
+  width: 80%;
+  border-radius: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.booklist__wrap h1{
+  padding: 20px;
+  text-align: center;
+}
+
+.booklist__description {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.booklist__description img{
+  width: 20%;
+}
+
+.booklist__description p{
+  width: 60%;
+} */
+
+
+
+
 .booklist__container {
   margin: 0;
   padding: 0;
