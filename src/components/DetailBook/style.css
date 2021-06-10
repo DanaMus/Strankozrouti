@@ -32,6 +32,36 @@
 
 .singledetail__print {
   margin-top: 30px;
+  background-color: rgb(63, 81, 181);
+  text-transform: uppercase;
+  color:white;
+  font-size: 0.9em;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+.singledetail__print:hover {
+  background-color: rgb(0, 41, 132);
+}
+
+.singledetail__back {
+  width: 100px;
+  margin-top: 30px;
+  margin-right: 20px;
+  background-color: white;
+  text-transform: uppercase;
+  color: rgb(63, 81, 181);
+  font-size: 0.9em;
+  padding: 10px;
+  border: 1px solid rgb(63, 81, 181);
+  border-radius: 5px;
+}
+
+.singledetail__back:hover {
+  color: rgb(0, 41, 132);
+  border: 1px solid rgb(0, 41, 132);
+  background-color: rgb(248, 244, 244)
 }
 
 .detailbook__link {

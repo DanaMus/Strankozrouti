@@ -93,13 +93,15 @@ export const DetailBook = () => {
           </div>
         ) : null}
 
+        <Link to="/prectene">
+          <button className="singledetail__back">Zpět</button>
+        </Link>
+
         <button className="singledetail__print" onClick={window.print}>
           Vytisknout
         </button>
 
-        <Link to="/prectene">
-          <button className="back">Zpět</button>
-        </Link>
+        
       </div>
       <div className="book__footer"></div>
     </>
