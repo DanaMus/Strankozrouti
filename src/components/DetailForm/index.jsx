@@ -71,6 +71,7 @@ const DetailForm = () => {
     'komiks',
     'humor',
     'dobrodružné',
+    'historie',
     'vzdělávací',
     'poezie',
   ];
