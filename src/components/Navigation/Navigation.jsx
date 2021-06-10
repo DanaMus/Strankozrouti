@@ -46,7 +46,7 @@ export const Navigation = () => {
         <div className="menu__burger">
           <HamburgerMenu
             open={open}
-            naKliknutiNaTlacitko={handleClickHamburgerMenu}
+            pressButton={handleClickHamburgerMenu}
           />
         </div>
         <div className="login">
