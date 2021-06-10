@@ -1,16 +1,28 @@
 .book__container {
   background-color: white;
+  min-height: 600px;
   padding: 20px;
   line-height: 2.5;
 }
 
+.book__head {
+  height: 100px;
+  background-image: url('../../assets/bookshelf.svg');
+}
+
+.book__footer {
+  height: 100px;
+  background-image: url('../../assets/bookshelf2.svg');
+}
+
 .singledetail__heading--2 {
-  font-size: 2em;
+  font-size: 1.2em;
   margin-bottom: 0;
 }
 
 .singledetail__heading--1 {
-  font-size: 2.5em;
+  font-size: 1.5em;
+  line-height: 1.2;
   margin-top: 0;
 }
 
@@ -28,11 +40,18 @@
 
 @media screen and (min-width: 768px) {
   .book__container {
-    padding: 120px;
-    padding-top: 40px;
+    padding: 60px 40px;
   }
   .singledetail__container {
     display: flex;
+  }
+  .singledetail__heading--2 {
+    font-size: 2em;
+    margin-bottom: 0;
+  }
+  .singledetail__heading--1 {
+    font-size: 2.5em;
+    margin-top: 0;
   }
   .singledetail__name {
     width: 30%;
@@ -54,8 +73,15 @@
   .book__container {
     background-color: white;
     padding: 120px;
-    padding-top: 40px;
     line-height: 2;
+  }
+
+  .book__head {
+    display: none;
+  }
+
+  .book__footer {
+    display: none;
   }
 
   .singledetail__container {
