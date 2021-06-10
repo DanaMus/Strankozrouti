@@ -3,11 +3,9 @@
 }
 
 .hero_container {
- 
- display: flex;
- flex-direction: column-reverse;
- align-items: center;
- 
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
 }
 
 .hero--image {
@@ -19,19 +17,21 @@
   max-width: 90%;
 }
 
+.hero__link {
+  text-decoration: none;
+}
 
 .hero--description {
   width: 50%;
   text-align: center;
   padding: 20px;
- }
+}
 
 h1 {
-font-size: 1.3em;
-font-family: 'Bangers';
-font-weight: 400;
-letter-spacing: 2px;
-
+  font-size: 1.3em;
+  font-family: 'Bangers';
+  font-weight: 400;
+  letter-spacing: 2px;
 }
 
 .btn__record {
@@ -40,7 +40,7 @@ letter-spacing: 2px;
   padding: 20px;
   background-color: rgb(43, 43, 133);
   color: white;
-  font-family:'Roboto';
+  font-family: 'Roboto';
   text-transform: uppercase;
   font-weight: 400;
   font-size: 0.7em;
@@ -51,48 +51,32 @@ letter-spacing: 2px;
 
 .btn__record:hover {
   background-color: rgb(202, 41, 148);
-  box-shadow:5px 5px 5px rgb(128, 124, 124);
+  box-shadow: 5px 5px 5px rgb(128, 124, 124);
 }
 
-
-
-  @media screen and (min-width: 500px) {
-
-    h1 {
-      padding-top: 5px;
-      font-size: 2em;
-      }
-
-      button {
-        font-size: 1.5em;
-      }
-  
-  
-  
+@media screen and (min-width: 500px) {
+  h1 {
+    padding-top: 5px;
+    font-size: 2em;
   }
 
+  button {
+    font-size: 1.5em;
+  }
+}
 
-  @media screen and (min-width: 800px) {
+@media screen and (min-width: 800px) {
+  .hero_container {
+    flex-direction: row;
 
-    .hero_container {
- 
-      flex-direction: row;
- 
-      padding-bottom: 50px;
-      
-     }
-    h1 {
-      padding-top: 5px;
-      font-size: 3em;
-      }
-  
-      button {
-        font-size: 2em;
-        
-      }
-  
+    padding-bottom: 50px;
+  }
+  h1 {
+    padding-top: 5px;
+    font-size: 3em;
   }
 
-
-
-
+  button {
+    font-size: 2em;
+  }
+}

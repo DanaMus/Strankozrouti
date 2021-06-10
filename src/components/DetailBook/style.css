@@ -22,6 +22,10 @@
   margin-top: 30px;
 }
 
+.detailbook__link {
+  text-decoration: none;
+}
+
 @media screen and (min-width: 768px) {
   .book__container {
     padding: 120px;

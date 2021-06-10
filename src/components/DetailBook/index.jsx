@@ -77,15 +77,15 @@ export const DetailBook = () => {
           <div className="singledetail__item">{bookDetail.optional}</div>
         </div>
       ) : null}
-      
+
       <button className="singledetail__print" onClick={window.print}>
         Vytisknout
       </button>
 
       <Link to="/prectene">
-      <button className="back">Zpět</button>
-        </Link>
-      
+        <button className="back">Zpět</button>
+      </Link>
+
       {/* <h2>{film.jmeno}</h2>
       <p>{film.obrazek}</p>
       <img src={film.obrazek} alt="" />

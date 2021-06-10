@@ -63,7 +63,7 @@ const ToReadPage = () => {
             className="toread__add"
             size="medium"
             variant="contained"
-            color="secondary"
+            color="primary"
             type="submit"
           >
             Přidat

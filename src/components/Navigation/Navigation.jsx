@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { HamburgerMenu } from '../HamburgerMenu/HamburgerMenu';
 import './style.css';
+import { Button } from '@material-ui/core';
 
 export const Navigation = () => {
   const location = useLocation();
@@ -49,15 +50,19 @@ export const Navigation = () => {
           />
         </div>
         <div className="login">
-          <button className="btn_login">Přihlásit se</button>
+          <Button
+            size="medium"
+            variant="contained"
+            color="primary"
+            style={{ marginRight: '10px', marginTop: '25px' }}
+            className="btn_login"
+          >
+            Přihlásit se
+          </Button>
         </div>
       </div>
     );
   } else {
-    return (
-      <>
-        
-      </>
-    );
+    return <></>;
   }
 };

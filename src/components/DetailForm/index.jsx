@@ -193,7 +193,7 @@ const DetailForm = () => {
             type="submit"
             size="large"
             variant="contained"
-            color="secondary"
+            color="primary"
           >
             Uložit stručný záznam
           </Button>
@@ -259,7 +259,7 @@ const DetailForm = () => {
           <Button
             size="large"
             variant="contained"
-            color="secondary"
+            color="primary"
             type="submit"
           >
             Uložit záznam
