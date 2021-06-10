@@ -34,7 +34,7 @@ export const InfoIcon = () => {
    </div>
       <div className="infoicon--description">
       <h3>Zábavně</h3>
-      <p>Každou přečtenou knížkou nakrmíš stránkožrouta. On ti za to rád poví kolik stránek už máš přečtených a jaký žánr u tebe zrovna vede.</p>
+      <p>Každou přečtenou knížkou nakrmíš stránkožrouta. On ti za to rád poví kolik stránek už máš přečtených a připomene ti co číst dál.</p>
       </div>
       </div>
       </div>
