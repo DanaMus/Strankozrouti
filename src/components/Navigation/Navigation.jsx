@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Link, useLocation } from 'react-router-dom';
+import { NavLink, Link, useLocation } from 'react-router-dom';
 import { HamburgerMenu } from '../HamburgerMenu/HamburgerMenu';
 import './style.css';
 import { Button } from '@material-ui/core';
@@ -23,24 +23,24 @@ export const Navigation = () => {
         <div
           className={open ? 'menu__items' : 'menu__items menu__items--closed'}
         >
-          <Link to="/" id="home" className="menu__item">
+          <NavLink exact to="/" id="home" activeClassName="selected" className="menu__item">
             Domů
-          </Link>
-          <Link to="/detailni" id="book" className="menu__item">
+          </NavLink>
+          <NavLink exact to="/detailni" id="book" activeClassName="selected" className="menu__item">
             Zapsat knížku
-          </Link>
-          <Link to="/prectene" id="read" className="menu__item">
+          </NavLink>
+          <NavLink exact to="/prectene" id="read" activeClassName="selected" className="menu__item">
             Přečtené
-          </Link>
-          <Link to="/kprecteni" id="plantoread" className="menu__item">
+          </NavLink>
+          <NavLink exact to="/kprecteni" id="plantoread" activeClassName="selected" className="menu__item">
             Plánované
-          </Link>
-          <Link to="/statistika" id="statistics" className="menu__item">
+          </NavLink>
+          <NavLink exact to="/statistika" id="statistics" activeClassName="selected" className="menu__item">
             Moje
-          </Link>
-          <Link to="/oprojektu" id="about" className="menu__item">
+          </NavLink>
+          <NavLink exact to="/oprojektu" id="about" activeClassName="selected" className="menu__item">
             O projektu
-          </Link>
+          </NavLink>
         </div>
 
         <div className="menu__burger">
