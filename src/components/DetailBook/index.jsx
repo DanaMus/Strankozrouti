@@ -8,10 +8,21 @@ import ReactToPrint from 'react-to-print';
 export const DetailBook = () => {
   const { id } = useParams();
   const [bookDetail, setBookDetail] = useState('');
+  const [dateFormat, setDateFormat] = useState('');
 
   useEffect(() => {
     const docRef = db.collection('BookList').doc(id);
-    docRef.get().then((doc) => setBookDetail(doc.data()));
+    docRef.get().then((doc) => {
+      setBookDetail(doc.data());
+      let dataDate = new Date(doc.data().date);
+      setDateFormat(
+        dataDate.getDate() +
+          '.' +
+          (dataDate.getMonth() + 1) +
+          '.' +
+          dataDate.getFullYear(),
+      );
+    });
   }, []);
   /* const detailBook = db.collection('BookList').find((x) => x.id === id); */
   /* const detailBook = db.collection('BookList').doc({ id }); */
@@ -29,7 +40,7 @@ export const DetailBook = () => {
       </div>
       <div className="singledetail__container">
         <div className="singledetail__name">Datum přečtení: </div>
-        <div className="singledetail__item">{bookDetail.date}</div>
+        <div className="singledetail__item">{dateFormat}</div>
       </div>
       <div className="singledetail__container">
         <div className="singledetail__name">Počet stránek: </div>
