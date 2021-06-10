@@ -6,15 +6,16 @@
   display: flex;
   flex-direction: column-reverse;
   align-items: center;
+  padding-bottom: 100px;
 }
 
 .hero--image {
-  width: 50%;
-  padding-left: 40px;
+  width: 90%;
 }
 
 .hero--monster {
   max-width: 90%;
+  margin-bottom: 30px;
 }
 
 .hero__link {
@@ -22,9 +23,8 @@
 }
 
 .hero--description {
-  width: 50%;
+  width: 90%;
   text-align: center;
-  padding: 20px;
 }
 
 h1 {
@@ -36,7 +36,6 @@ h1 {
 
 .btn__record {
   margin-top: 20px;
-  margin-bottom: 50px;
   padding: 20px;
   background-color: rgb(43, 43, 133);
   color: white;
@@ -68,7 +67,6 @@ h1 {
 @media screen and (min-width: 800px) {
   .hero_container {
     flex-direction: row;
-
     padding-bottom: 50px;
   }
   h1 {
@@ -79,4 +77,14 @@ h1 {
   button {
     font-size: 2em;
   }
+
+  .hero--image {
+    width: 50%;
+  }
+
+  .hero--description {
+    width: 50%;
+    text-align: center;
+  }
+
 }

@@ -1,5 +1,4 @@
 footer {
-  background-color: #8bbbdb;
   padding: 15px;
   font-size: 1em;
   font-family: 'Bangers';
@@ -10,35 +9,55 @@ footer {
   margin-bottom: -10px; */
 }
 
+.footer__description{
+  display: flex;
+  justify-content: center;
+  font-size: 1.3em;
+}
+
 .czechitas_logo {
-  
-  width: 120px;
-  height: 50px;
+  width: 80px;
+  height: 40px;
 }
 
 footer p {
   margin: 1em;
 }
 
-@media (max-width: 480px) {
-  
-  
-}
 
 @media (min-width: 481px) {
-  
+
+  /* .footer__container{
+    margin-left: auto;
+    margin-right: auto;
+  } */
+
+  .footer__description{
+    font-size: 1.1em;
+  }
+
+  /* .czechitas_logo{
+    
+  } */
+
 
 }
 
 @media (min-width: 769px) {
- 
+  .footer__description{
+    
+    font-size: 1.3em;
+  }
 
 
 }
 
 @media (min-width: 1025px) {
 
-  
+  .footer__description{
+    
+    font-size: 1.5em;
+  } 
 
 
 

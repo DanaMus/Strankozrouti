@@ -141,7 +141,7 @@
   .singledetail__print {
     display: none;
   }
-  .back {
+  .singledetail__back {
     display: none;
   }
 }

@@ -13,8 +13,10 @@ export const Footer = () => {
 if (!location.pathname.match(regex)) { return (
     
   <footer>
-    <p>Tento projekt byl vytvořen v rámci Digitální akademie</p>
+    <div className="footer__container">
+    <p className="footer__description">Tento projekt byl vytvořen v rámci Digitální akademie</p>
     <a href="https://www.czechitas.cz/"><img className='czechitas_logo' src='/assets/czechitas.png' alt='czechitaslogo'></img></a>
+    </div>
   </footer>
 
   )} else {
