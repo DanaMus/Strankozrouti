@@ -1,77 +1,129 @@
 .statistics__container {
   background-color: white;
-  width: 90%;
+  min-width: 300px;
+  max-width: 950px;
   line-height: 2;
-  margin-left: auto;
-  margin-right: auto;
-  border-radius: 10px;
-  margin-top:40px;
-  margin-bottom:40px;
+  margin: 40px auto;
 }
 
 .statistics__flex {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
+  justify-content: center;
   padding: 50px;
+  padding-bottom: 0;
 }
 
-
-
-.statistics__motto {
-  width: 100%;
-}
-
-.statistics__pagescount p, .statistics__bookscount p {
+.statistics__pagescount p,
+.statistics__bookscount p {
   background-image: url('../../assets/prazdnabublina.svg');
   background-size: contain;
   background-repeat: no-repeat;
   width: 200px;
   height: 150px;
-  padding: 10px;
+  text-align: center;
+  padding: 20px;
+  padding-right: 30px;
   text-align: center;
 }
 
-
-
 .statistics__motto {
-display:flex;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-left: 10px;
+  background-color: rgb(199, 192, 192);
+  border-radius: 5px;
+  width: 98%;
+  margin: 0 auto;
 }
 
-.statistics__motto h4 { 
-  width: 50%;
+.statistics__motto h4 {
+  width: 100%;
+}
+
+.statistics__motto img {
+  padding-bottom: 20px;
+}
+
+.statistics__reminder {
+  padding: 20px;
+}
+
+.statistics__reminder-heading {
+  color: red;
+}
+
+.slogan {
+  padding: 20px;
+}
+
+.purple,
+.magenta {
+  animation: Move 3s linear infinite;
+  animation-delay: 1s;
+}
+
+.violet {
+  animation: MoveUpDown 2s linear infinite;
+}
+
+.blue {
+  animation: MoveUpDown 2s linear infinite;
+  animation-delay: 1s;
+}
+
+@keyframes MoveUpDown {
+  0%,
+  100% {
+    transform: translateY(0);
   }
-
-  .purple, .magenta {
-    animation: Move 3s linear infinite;
-    animation-delay: 1s;
+  50% {
+    transform: translateY(-100px);
   }
+}
 
-
-  .violet {
-    animation: MoveUpDown 2s linear infinite;
+@keyframes Move {
+  0%,
+  100% {
+    transform: translateX(0);
   }
-
-  .blue {
-    animation: MoveUpDown 2s linear infinite;
-    animation-delay: 1s;
+  50% {
+    transform: translateX(50px);
   }
+}
 
-  @keyframes MoveUpDown {
-    0%, 100% {
-      transform: translateY(0);
-    }
-    50% {
-      transform: translateY(-100px);
-    }
+@media screen and (min-width: 510px) {
+  .statistics__flex {
+    justify-content: space-between;
   }
+}
 
-  @keyframes Move {
-    0%, 100% {
-      transform: translateX(0);
-    }
-    50% {
-      transform: translateX(50px);
-    }
+@media screen and (min-width: 700px) {
+  .statistics__flex {
+    justify-content: space-between;
   }
+  .statistics__container {
+    display: flex;
+  }
+  .statistics__aside {
+    width: 40%;
+    border-left: 1px solid;
+    margin: 40px auto;
+  }
+  .statistics__motto {
+    background-color: white;
+    /* box-shadow: 5px 5px 5px 5px rgb(199, 192, 192); */
+  }
+}
 
+@media screen and (min-width: 850px) {
+  .statistics__aside {
+    width: 45%;
+    margin: 65px 20px;
+    border: 0;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px 5px rgb(199, 192, 192);
+  }
+}

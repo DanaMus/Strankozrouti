@@ -70,10 +70,9 @@ const StatisticsPage = () => {
 
   return (
     <div className="statistics__container">
-      <p>Přečetl jsi další knížku? Stránkožrout ji chce mít v bříšku!</p>
       <div className="statistics__flex">
         <div className="statistics__pagescount">
-          <p>Počet snědených stran celkem: {pagesCount}</p>
+          <p>Celkem jsme snědli už {pagesCount} stran!</p>
           <img
             className="violet"
             src="../../assets/violet.svg"
@@ -81,9 +80,7 @@ const StatisticsPage = () => {
           ></img>
         </div>
         <div className="statistics__pagescount">
-          <p>
-            Počet snědených stran za posledních 30 dní: {pagesCountLastMonth}
-          </p>
+          <p>Za posledních 30 dní jsme snědli {pagesCountLastMonth} stránek.</p>
           <img
             className="purple"
             src="../../assets/purple.svg"
@@ -91,7 +88,7 @@ const StatisticsPage = () => {
           ></img>
         </div>
         <div className="statistics__bookscount">
-          <p>Počet snědených knih celkem: {booksCount}</p>
+          <p>Počet snědených knížek celkem: {booksCount}</p>
           <img
             className="magenta"
             src="../../assets/magenta.svg"
@@ -100,13 +97,17 @@ const StatisticsPage = () => {
         </div>
         <div className="statistics__bookscount">
           <p>
-            Počet snědených knih za posledních 30 dní: {booksCountLastMonth}
+            Počet snědených knížek za posledních 30 dní: {booksCountLastMonth}
           </p>
           <img className="blue" src="../../assets/blue.svg" alt="monster"></img>
         </div>
+      </div>
+      <div className="statistics__aside">
         <div className="statistics__motto">
           <h4>
-            Náhodný citát: {randomMotto}<br/>(z knihy {randomMottoBook})
+            {randomMotto}
+            <br />
+            (z knihy {randomMottoBook})
           </h4>
           <img
             className="green"
@@ -114,15 +115,13 @@ const StatisticsPage = () => {
             alt="monster"
           ></img>
         </div>
-        <div>
-          <h5>Nezapomeň na:</h5>
+        <div className="statistics__reminder">
+          <h4 className="statistics__reminder-heading">Nezapomeň!</h4>
           <p>{randomTodo}</p>
         </div>
-        {/* <p>Nejoblíbenější knihy - třeba 5</p>
-      <p>Nejčtenější žánr</p>
-      <p>Nejčtenější autor</p>
-      <p>Před rokem jsi četl</p>
-      <p>Naplánovaná četba</p> */}
+        {/* <h3 className="slogan">
+        Přečetl jsi další knížku? Stránkožrout ji chce mít v bříšku!
+      </h3> */}
       </div>
     </div>
   );
