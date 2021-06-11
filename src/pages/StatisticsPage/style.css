@@ -4,6 +4,7 @@
   max-width: 950px;
   line-height: 2;
   margin: 40px auto;
+  border-radius: 10px;
 }
 
 .statistics__flex {
@@ -80,7 +81,7 @@
     transform: translateY(0);
   }
   50% {
-    transform: translateY(-100px);
+    transform: translateY(-50px);
   }
 }
 
