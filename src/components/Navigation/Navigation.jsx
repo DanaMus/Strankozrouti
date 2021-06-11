@@ -14,6 +14,9 @@ export const Navigation = () => {
   const handleClickHamburgerMenu = () => {
     setOpen(!open);
   };
+
+  const [LogIn, setLogIn] = useState(true);
+
   const regex = /prectene\/(.*)/g;
   if (!location.pathname.match(regex)) {
     return (
@@ -51,13 +54,12 @@ export const Navigation = () => {
         </div>
         <div className="login">
           <Button
-            size="medium"
-            variant="contained"
-            color="primary"
+          size="medium"
+          variant={LogIn ? "contained" : "outlined" }
+          color="primary"
+            
             style={{ marginRight: '10px', marginTop: '25px' }}
-            className="btn_login"
-          >
-            Přihlásit se
+            onClick={() => setLogIn(!LogIn)}>{LogIn ? "Přihlásit" : "Odhlásit"}
           </Button>
         </div>
       </div>
