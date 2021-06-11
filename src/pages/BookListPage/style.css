@@ -4,24 +4,22 @@
   border-radius: 10px;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 50px;
 }
 
-/* .booklist__wrap h1{
-  padding: 20px;
+ .booklist__title{
   text-align: center;
+  padding-top: 50px;
 }
 
 .booklist__description {
-  display: flex;
-  justify-content: center;
   padding: 20px;
 }
 
-.booklist__description img{
-  width: 20%;
-}
+
 
 .booklist__description p{
-  width: 60%;
-} */
+ text-align: center;
+ 
+} 
 

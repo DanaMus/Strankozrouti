@@ -22,9 +22,6 @@
   position: relative;
 }
 
-.book:hover {
-  background-color: thistle;
-}
 
 .booklist a {
   text-decoration: none;
@@ -32,7 +29,7 @@
   min-height: 35%;
   text-align: center;
   padding: 10px;
-  background-color: rgb(250, 221, 241);
+  background-color: rgb(226, 97, 199);
   border-radius: 10%;
   width: 84%;
   position: absolute;
