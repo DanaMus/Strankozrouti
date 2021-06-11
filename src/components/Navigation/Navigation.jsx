@@ -23,22 +23,22 @@ export const Navigation = () => {
         <div
           className={open ? 'menu__items' : 'menu__items menu__items--closed'}
         >
-          <NavLink exact to="/" id="home" activeClassName="selected" className="menu__item">
+          <NavLink exact to="/" onClick={handleClickHamburgerMenu} id="home" activeClassName="selected" className="menu__item">
             Domů
           </NavLink>
-          <NavLink exact to="/detailni" id="book" activeClassName="selected" className="menu__item">
+          <NavLink exact to="/detailni" onClick={handleClickHamburgerMenu} id="book" activeClassName="selected" className="menu__item">
             Zapsat knížku
           </NavLink>
-          <NavLink exact to="/prectene" id="read" activeClassName="selected" className="menu__item">
+          <NavLink exact to="/prectene" onClick={handleClickHamburgerMenu} id="read" activeClassName="selected" className="menu__item">
             Přečtené
           </NavLink>
-          <NavLink exact to="/kprecteni" id="plantoread" activeClassName="selected" className="menu__item">
+          <NavLink exact to="/kprecteni" onClick={handleClickHamburgerMenu} id="plantoread" activeClassName="selected" className="menu__item">
             Plánované
           </NavLink>
-          <NavLink exact to="/statistika" id="statistics" activeClassName="selected" className="menu__item">
+          <NavLink exact to="/statistika" onClick={handleClickHamburgerMenu} id="statistics" activeClassName="selected" className="menu__item">
             Moje
           </NavLink>
-          <NavLink exact to="/oprojektu" id="about" activeClassName="selected" className="menu__item">
+          <NavLink exact to="/oprojektu" onClick={handleClickHamburgerMenu} id="about" activeClassName="selected" className="menu__item">
             O projektu
           </NavLink>
         </div>
