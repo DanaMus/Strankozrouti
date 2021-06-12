@@ -18,6 +18,7 @@ const validationSchema = yup.object({
 });
 
 const DetailForm = () => {
+  const [bubble, setBubble] = useState(false);
   let history = useHistory();
   const formik = useFormik({
     initialValues: {
@@ -83,12 +84,16 @@ const DetailForm = () => {
           src="../../assets/monsterleft.svg"
           alt="Stránkožrout"
           className="form__img"
+          onMouseEnter={() => setBubble(true)}
+          onMouseLeave={() => setBubble(false)}
         />
+      {bubble ? 
         <img
           src="../../assets/bublinanapis.svg"
           alt="Nakrm mě"
           className="form__img--bubble"
-        />
+        /> : <></>
+      }
         <h2>Základní informace:</h2>
         <TextField
           id="bookName"
