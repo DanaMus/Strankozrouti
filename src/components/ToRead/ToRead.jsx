@@ -20,7 +20,7 @@ const ToRead = () => {
     return uklid;
   }, []);
   return (
-    <ul>
+    <ul className="toread__ul">
       {toRead.map((book) => (
         <div className="toread__box" key={book.id}>
           <div className="toread__box1">

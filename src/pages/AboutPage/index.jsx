@@ -7,7 +7,7 @@ const AboutPage = () => {
       <div className="about__container">
         <div className="about__project">
           <p>
-            Chceš být chytrý, empatický, mít skvělou slovní zásobu a oslňovat
+            Chceš být chytrý, umět se vcítit do ostatních, mít skvělou slovní zásobu a oslňovat
             své okolí svými znalostmi? Válet v češtině a psát bez hrubek? Prožít
             nějaký skvělý příběh dávno před tím, než ho tvoji spolužáci uvidí v
             kinech? Věděl jsi, že tohle všechno můžeš mít, když budeš číst

@@ -5,12 +5,11 @@
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 50px;
+  margin-top: 50px;
+  justify-content: center;
+  display: flex;
 }
 
- .booklist__title{
-  text-align: center;
-  padding-top: 50px;
-}
 
 .booklist__description {
   padding: 20px;

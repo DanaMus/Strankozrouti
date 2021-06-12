@@ -53,7 +53,8 @@ const ToReadPage = () => {
             variant="outlined"
             multiline
             rows={1}
-            rowsMax={100}
+            rowsMax={5}
+            inputProps={{maxLength:55}}
             value={formik.values.toread}
             onChange={formik.handleChange}
             error={formik.touched.toread && Boolean(formik.errors.toread)}
