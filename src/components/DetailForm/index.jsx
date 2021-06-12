@@ -5,7 +5,6 @@ import { useFormik } from 'formik';
 import * as yup from 'yup';
 import { Button, ButtonGroup, TextField } from '@material-ui/core';
 import { db } from '../../db';
-/* import firebase from 'firebase/app'; */
 import InputLabel from '@material-ui/core/InputLabel';
 import FormControl from '@material-ui/core/FormControl';
 import Select from '@material-ui/core/Select';
@@ -48,21 +47,11 @@ const DetailForm = () => {
         recommendation: values.recommendation,
         optional: values.optional,
       });
-      /* console.log(values); */
       history.push('/prectene');
     },
-    /* date: firebase.firestore.FieldValue.serverTimestamp() */
-    /* console.log(JSON.stringify(values)), */
     validationSchema: validationSchema,
   });
-  /* const myPrint = (form) => {
-    const printdata = document.querySelector('form');
-    const newwin = window.open('');
-    newwin.document.write(printdata.outerHTML);
-    newwin.print();
-    newwin.close();
-  }; */
-
+ 
   const genres = [
     'beletrie',
     'pohádky',
@@ -94,6 +83,11 @@ const DetailForm = () => {
           src="../../assets/monsterleft.svg"
           alt="Stránkožrout"
           className="form__img"
+        />
+        <img
+          src="../../assets/bublinanapis.svg"
+          alt="Nakrm mě"
+          className="form__img--bubble"
         />
         <h2>Základní informace:</h2>
         <TextField
@@ -127,9 +121,6 @@ const DetailForm = () => {
           error={formik.touched.pages && Boolean(formik.errors.pages)}
           helperText={formik.touched.pages && formik.errors.pages}
         />
-        {/* <Button onClick={window.print} variant="outlined">
-          Vytisknout
-        </Button> */}
         <FormControl
           style={{ width: '50%', marginTop: '1rem', marginBottom: '0.5rem' }}
         >
@@ -271,21 +262,6 @@ const DetailForm = () => {
             Smazat
           </Button>
         </div>
-        {/* <Button
-            onClick={
-              window.print */}
-        {/* } /* {myPrint} */
-        /* {printJS('docs/printjs.pdf')} */
-        /* {printJS({
-              printable: 'printJS-form',
-              type: 'html',
-              scanStyles: true,
-              css: 'style.css',
-            })} */}
-        {/* >
-            Vytisknout
-          </Button> */}
-        {/*    </ButtonGroup> */}
       </form>
     </div>
   );
