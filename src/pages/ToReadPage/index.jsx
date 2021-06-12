@@ -29,13 +29,13 @@ const ToReadPage = () => {
       <div className="toread__container">
         <div className="toread__text">
           <p>
-            Máš povinnou četbu ze školy? Dostal jsi nějaký tip na knížku? Čekáš
-            na pokračování své oblíbené knihy?
+            Máš povinnou četbu ze školy? Dostal jsi nějaký skvělý tip? Čekáš na
+            pokračování své oblíbené knihy?
           </p>
           <p>
-            Sem si můžeš zapsat knihy, které se chystáš číst. Po jejich přečtení
-            si můžeš knihu v seznamu v levém sloupečku odškrtnout. Ještě lepší
-            bude, když si ji rovnou zapíšeš do deníčku a nakrmíš tak
+            Sem si můžeš zapsat knížky, které se chystáš číst. Po přečtení si je
+            můžeš v seznamu v pravém sloupečku odškrtnout nebo smazat. Ještě
+            lepší bude, když si knížku rovnou zapíšeš do deníčku a nakrmíš tak
             Stránkožrouty.
           </p>
           <p>
@@ -54,7 +54,7 @@ const ToReadPage = () => {
             multiline
             rows={1}
             rowsMax={5}
-            inputProps={{maxLength:55}}
+            inputProps={{ maxLength: 55 }}
             value={formik.values.toread}
             onChange={formik.handleChange}
             error={formik.touched.toread && Boolean(formik.errors.toread)}
