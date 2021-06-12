@@ -1,9 +1,9 @@
-
 .booklist__container {
   margin: 0;
   padding: 0;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   align-items: center;
   font-size: 1.3em;
 }
@@ -21,7 +21,6 @@
   align-items: center;
   position: relative;
 }
-
 
 .booklist a {
   text-decoration: none;

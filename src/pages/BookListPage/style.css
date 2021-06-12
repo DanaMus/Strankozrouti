@@ -2,23 +2,13 @@
   background-color: white;
   width: 80%;
   border-radius: 10px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 50px;
-  margin-top: 50px;
-  justify-content: center;
-  display: flex;
+  margin: 50px auto;
 }
-
 
 .booklist__description {
   padding: 20px;
 }
 
-
-
-.booklist__description p{
- text-align: center;
- 
-} 
-
+.booklist__description p {
+  text-align: center;
+}
