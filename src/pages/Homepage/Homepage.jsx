@@ -8,9 +8,9 @@ import './style.css';
 export const Homepage = () => {
   return (
     <>
-      <div className="homepage_container">
-        <div className="hero_container">
-          <div className="hero--description">
+      <div className="homepage__container">
+        <div className="hero__container">
+          <div className="hero__description">
             <h1>Čtenářský deník</h1>
             <h1>jednoduše a zábavně!</h1>
             <Link className="hero__link" to="/detailni">
@@ -24,9 +24,9 @@ export const Homepage = () => {
               </Button>
             </Link>
           </div>
-          <div className="hero--image">
+          <div className="hero__image">
             <img
-              className="hero--monster"
+              className="hero__monster"
               src="assets/monsterlibraryleft.svg"
             ></img>
           </div>

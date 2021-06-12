@@ -1,19 +1,19 @@
-.homepage_container {
+.homepage__container {
   background-color: white;
 }
 
-.hero_container {
+.hero__container {
   display: flex;
   flex-direction: column-reverse;
   align-items: center;
   padding-bottom: 100px;
 }
 
-.hero--image {
+.hero__image {
   width: 90%;
 }
 
-.hero--monster {
+.hero__monster {
   max-width: 90%;
   margin-bottom: 30px;
 }
@@ -22,7 +22,7 @@
   text-decoration: none;
 }
 
-.hero--description {
+.hero__description {
   width: 90%;
   text-align: center;
 }
@@ -34,24 +34,7 @@ h1 {
   letter-spacing: 2px;
 }
 
-.btn__record {
-  margin-top: 20px;
-  padding: 20px;
-  background-color: rgb(43, 43, 133);
-  color: white;
-  font-family: 'Roboto';
-  text-transform: uppercase;
-  font-weight: 400;
-  font-size: 0.7em;
-  border-radius: 5px;
-  border: none;
-  text-decoration: none;
-}
 
-.btn__record:hover {
-  background-color: rgb(202, 41, 148);
-  box-shadow: 5px 5px 5px rgb(128, 124, 124);
-}
 
 @media screen and (min-width: 500px) {
   h1 {
@@ -65,24 +48,21 @@ h1 {
 }
 
 @media screen and (min-width: 800px) {
-  .hero_container {
+  .hero__container {
     flex-direction: row;
     padding-bottom: 50px;
   }
+  
   h1 {
     padding-top: 5px;
     font-size: 3em;
   }
 
-  button {
-    font-size: 2em;
-  }
-
-  .hero--image {
+  .hero__image {
     width: 50%;
   }
 
-  .hero--description {
+  .hero__description {
     width: 50%;
     text-align: center;
   }
