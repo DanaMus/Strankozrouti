@@ -43,7 +43,7 @@
   align-items: center;
   border: 1px solid black;
   margin-right: 0px;
-  height: 12em;
+  height: 10em;
 }
 
 .toread__box:hover {
@@ -71,6 +71,7 @@
   .toread__ul {
     padding:0 100px 50px 100px;
   }
+  
 }
 
 @media screen and (min-width: 1024px) {

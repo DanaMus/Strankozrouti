@@ -62,7 +62,7 @@ const ToReadPage = () => {
           ></TextField>
           <Button
             className="toread__add"
-            size="medium"
+            size="large"
             variant="contained"
             color="primary"
             type="submit"

@@ -3,7 +3,6 @@ import { useParams } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 import { db } from '../../db';
 import './style.css';
-import ReactToPrint from 'react-to-print';
 
 export const DetailBook = () => {
   const { id } = useParams();
@@ -24,16 +23,12 @@ export const DetailBook = () => {
       );
     });
   }, []);
-  /* const detailBook = db.collection('BookList').find((x) => x.id === id); */
-  /* const detailBook = db.collection('BookList').doc({ id }); */
-  /* const book = db.collection('BookList').find((x) => x.bookName === nazevKnihy) */ /*if (kodFilmu === "720753-v-siti") {
-    return <>Speciální film</>;
-  }*/
+
   return (
     <>
       <div className="book__head"></div>
       <div className="book__container">
-        {/* <h3>ID knížky: {id}</h3> */}
+        
         <div className="singledetail__container">
           <h2 className="singledetail__heading--2">{bookDetail.authorName}</h2>
         </div>

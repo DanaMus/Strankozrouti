@@ -28,6 +28,6 @@
 @media screen and (min-width: 1024px) {
   .toread__text {
     padding: 20px 200px 20px 200px;
-    font-size: 1.5em;
+    text-align: justify;
   }
 }

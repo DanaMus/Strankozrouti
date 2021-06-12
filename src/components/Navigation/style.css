@@ -63,27 +63,7 @@
   margin: 20px;
 }
 
-/* .btn_login {
-  width: 100%;
-  margin-right:10px;
-  margin-top: 25px;
-  padding: 10px;
-  
-  color: white;
-  font-family:'Roboto';
-  text-transform: uppercase;
-  
-  
-  font-weight: 400;
-  font-size: 0.7em;
-  border-radius: 5px;
-  border: none;
-}
 
-.btn_login:hover {
-    background-color: rgb(202, 41, 148);
-    box-shadow:5px 5px 5px rgb(128, 124, 124);
-} */
 
 
 
@@ -108,12 +88,9 @@
     display: none;
   }
   .menu {
-    /* display: flex; */
     flex-direction: row;
-    /* align-items: flex-end; */
     justify-content: center;
     background-color: white;
-    /* margin: -10px -10px; */
     position: relative;
   }
 
