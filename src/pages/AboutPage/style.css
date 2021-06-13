@@ -26,6 +26,11 @@
   border-radius: 10px;
 }
 
+.about__authors--heading,
+.about__authors--paragraph {
+  padding-right: 15px;
+}
+
 .about__author {
   width: 100%;
   margin: 5%;
@@ -42,15 +47,18 @@
 
 @media screen and (min-width: 750px) {
   .about__container {
-    padding: 80px 150px 80px 150px;
+    min-width: 500px;
+    padding: 50px 100px 80px 100px;
   }
   .about__paragraph--strong {
     padding-left: 100px;
   }
   .about__authors {
     display: flex;
+    justify-content: space-between;
   }
   .about__author {
     width: 45%;
+    margin: 0;
   }
 }

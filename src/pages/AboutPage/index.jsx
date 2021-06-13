@@ -7,11 +7,12 @@ const AboutPage = () => {
       <div className="about__container">
         <div className="about__project">
           <p>
-            Chceš být chytrý, umět se vcítit do ostatních, mít skvělou slovní zásobu a oslňovat
-            své okolí svými znalostmi? Válet v češtině a psát bez hrubek? Prožít
-            nějaký skvělý příběh dávno před tím, než ho tvoji spolužáci uvidí v
-            kinech? Věděl jsi, že tohle všechno můžeš mít, když budeš číst
-            knížky? A co je nejlepší, užiješ si při tom navíc spoustu zábavy!
+            Chceš být chytrý, umět se vcítit do ostatních, mít skvělou slovní
+            zásobu a oslňovat své okolí svými znalostmi? Válet v češtině a psát
+            bez hrubek? Prožít nějaký skvělý příběh dávno před tím, než ho tvoji
+            spolužáci uvidí v kinech? Věděl jsi, že tohle všechno můžeš mít,
+            když budeš číst knížky? A co je nejlepší, užiješ si při tom navíc
+            spoustu zábavy!
           </p>
           <p>
             Svět knih je plný úžasných příběhů, mouder a zajímavostí. Můžeš
@@ -53,12 +54,12 @@ const AboutPage = () => {
             <div className="about__imagecontainer">
               <img
                 className="about__image"
-                src='assets/dana.jpg'
+                src="assets/dana.jpg"
                 alt="Foto Dana"
               />
             </div>
-            <h2>Dana Musilová</h2>
-            <p>
+            <h2 className="about__authors--heading">Dana Musilová</h2>
+            <p className="about__authors--paragraph">
               Čtení je moje oblíbená činnost už od dětství, hrozně ráda chodím
               do knihoven a knihkupectví a miluji vůni knih. Svoje přečtené
               knížky si zapisuji velmi stručně do obyčejného sešítku A5. Mám
@@ -71,10 +72,11 @@ const AboutPage = () => {
           <div className="about__author">
             <img
               className="about__image"
-              src='assets/petra.jpg'  alt="Foto Petra"
+              src="assets/petra.jpg"
+              alt="Foto Petra"
             />
-            <h2>Petra Kejmarová</h2>
-            <p>
+            <h2 className="about__authors--heading">Petra Kejmarová</h2>
+            <p className="about__authors--paragraph">
               Mistr útěků z reality a věčný snílek. Knížky mi přináší do života
               radost už od prvních přečtených písmenek. Přesto jsem si čtenářský
               deník vedla vždy jen z povinnosti. Moc ráda bych projektem pomohla
