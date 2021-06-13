@@ -15,19 +15,32 @@
 }
 
 .toread__form {
-  margin: 100px auto;
+  margin: 50px auto;
   margin-top: 0;
 }
+
 
 @media screen and (min-width: 700px) {
   .toread__text {
     padding: 20px 100px 20px 100px;
   }
+
+  .toread__form {
+    padding: 0 100px;
+  }
+
+  
+
+  
 }
 
 @media screen and (min-width: 1024px) {
   .toread__text {
     padding: 20px 200px 20px 200px;
     text-align: justify;
+  }
+
+  .toread__form {
+    padding: 0 200px;
   }
 }

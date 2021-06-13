@@ -66,6 +66,7 @@ const ToReadPage = () => {
             variant="contained"
             color="primary"
             type="submit"
+            style={{ width: '100%' }}
           >
             Přidat
           </Button>
