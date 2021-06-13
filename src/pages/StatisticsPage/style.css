@@ -56,10 +56,6 @@
   color: rgb(255, 42, 127);
 }
 
-.slogan {
-  padding: 20px;
-}
-
 .purple {
   animation: Move 3s linear infinite;
 }
@@ -71,6 +67,20 @@
 
 .violet {
   animation: MoveUpDown 2s linear infinite;
+}
+
+.violet {
+  animation: spin 2s linear;
+  animation-delay: 1s;
+  transform-origin:center;
+  transform-box: fill-box
+}
+
+.violet:hover {
+  animation: spin 2s linear infinite;
+  animation-delay: 1s;
+  transform-origin:center;
+  transform-box: fill-box
 }
 
 .blue {
@@ -95,6 +105,16 @@
   }
   50% {
     transform: translateX(50px);
+  }
+}
+
+@keyframes spin {
+  from {
+      transform:rotate(0deg);
+  }
+
+  to{
+    transform:rotate(360deg);
   }
 }
 
