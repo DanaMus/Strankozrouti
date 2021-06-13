@@ -57,33 +57,45 @@
 }
 
 .purple {
+  animation: Move 3s linear;
+}
+
+.purple:hover {
   animation: Move 3s linear infinite;
 }
 
 .magenta {
-  animation: Move 3s linear infinite;
+  animation: Move 3s linear;
   animation-delay: 2s;
 }
 
+.magenta:hover {
+  animation: Move 3s linear infinite;
+}
+
 .violet {
-  animation: MoveUpDown 2s linear infinite;
+  animation: MoveUpDown 2s linear;
 }
 
 .violet {
   animation: spin 2s linear;
-  animation-delay: 1s;
   transform-origin:center;
   transform-box: fill-box
 }
 
 .violet:hover {
-  animation: spin 2s linear;
+  animation: spin 2s linear infinite;
   animation-delay: 1s;
   transform-origin:center;
   transform-box: fill-box
 }
 
 .blue {
+  animation: MoveUpDown 2s linear;
+  animation-delay: 1s;
+}
+
+.blue:hover {
   animation: MoveUpDown 2s linear infinite;
   animation-delay: 1s;
 }
@@ -151,11 +163,6 @@
     box-shadow: 5px 5px 5px 5px rgb(199, 192, 192);
   }
 
-  .violet:hover {
-    animation: spin 2s linear infinite;
-    animation-delay: 1s;
-    transform-origin:center;
-    transform-box: fill-box
-  }
+  
 
 }
