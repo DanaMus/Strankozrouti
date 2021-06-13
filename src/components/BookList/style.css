@@ -34,3 +34,7 @@
   position: absolute;
   left: 11px;
 }
+
+.booklist a:hover {
+  background-color: rgb(225, 20, 183); 
+}

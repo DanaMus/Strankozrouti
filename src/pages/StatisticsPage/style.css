@@ -53,17 +53,20 @@
 }
 
 .statistics__reminder-heading {
-  color: red;
+  color: rgb(255, 42, 127);
 }
 
 .slogan {
   padding: 20px;
 }
 
-.purple,
+.purple {
+  animation: Move 3s linear infinite;
+}
+
 .magenta {
   animation: Move 3s linear infinite;
-  animation-delay: 1s;
+  animation-delay: 2s;
 }
 
 .violet {
