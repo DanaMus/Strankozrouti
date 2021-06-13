@@ -3,7 +3,7 @@
   min-width: 300px;
   max-width: 950px;
   line-height: 2;
-  margin: 40px auto;
+  margin: 50px auto;
   border-radius: 10px;
 }
 
@@ -73,21 +73,22 @@
   animation: Move 3s linear infinite;
 }
 
-.violet {
-  animation: MoveUpDown 2s linear;
+.green:hover {
+  animation: backspin 2s linear infinite;
+  transform-origin:center;
+  transform-box: fill-box;
 }
 
 .violet {
   animation: spin 2s linear;
   transform-origin:center;
-  transform-box: fill-box
+  transform-box: fill-box;
 }
 
 .violet:hover {
   animation: spin 2s linear infinite;
-  animation-delay: 1s;
   transform-origin:center;
-  transform-box: fill-box
+  transform-box: fill-box;
 }
 
 .blue {
@@ -126,6 +127,16 @@
 
   to{
     transform:rotate(360deg);
+  }
+}
+
+@keyframes backspin {
+  from {
+    transform:rotate(360deg);
+  }
+
+  to{
+    transform:rotate(0deg);
   }
 }
 
