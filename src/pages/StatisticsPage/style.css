@@ -92,12 +92,11 @@
 
 .blue {
   animation: MoveUpDown 2s linear;
-  animation-delay: 1s;
+  animation-delay: 3s;
 }
 
 .blue:hover {
   animation: MoveUpDown 2s linear infinite;
-  animation-delay: 1s;
 }
 
 @keyframes MoveUpDown {

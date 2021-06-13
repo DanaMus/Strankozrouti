@@ -9,12 +9,12 @@ footer {
 .footer__description{
   display: flex;
   justify-content: center;
-  font-size: 1.3em;
+  font-size: 1em;
 }
 
 .czechitas_logo {
-  width: 180px;
-  height: 80px;
+  width: 90px;
+  height: 30px;
 }
 
 footer p {
@@ -24,18 +24,9 @@ footer p {
 
 @media (min-width: 481px) {
 
-  /* .footer__container{
-    margin-left: auto;
-    margin-right: auto;
-  } */
-
   .footer__description{
     font-size: 1.1em;
   }
-
-  /* .czechitas_logo{
-    
-  } */
 
 
 }
@@ -44,6 +35,11 @@ footer p {
   .footer__description{
     
     font-size: 1.3em;
+  }
+
+  .czechitas_logo {
+    width: 120px;
+    height: 40px;
   }
 
 
@@ -56,6 +52,10 @@ footer p {
     font-size: 1.5em;
   } 
 
+  .czechitas_logo {
+    width: 180px;
+    height: 60px;
+  }
 
 
 
