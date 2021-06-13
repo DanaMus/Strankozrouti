@@ -77,7 +77,7 @@
 }
 
 .violet:hover {
-  animation: spin 2s linear infinite;
+  animation: spin 2s linear;
   animation-delay: 1s;
   transform-origin:center;
   transform-box: fill-box
@@ -150,4 +150,12 @@
     border-radius: 5px;
     box-shadow: 5px 5px 5px 5px rgb(199, 192, 192);
   }
+
+  .violet:hover {
+    animation: spin 2s linear infinite;
+    animation-delay: 1s;
+    transform-origin:center;
+    transform-box: fill-box
+  }
+
 }
